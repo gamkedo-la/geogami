@@ -6,8 +6,8 @@ public class Shape : MonoBehaviour {
     
 
     public GameObject flippable;
-    Flippable flippableScript; // Script of main child object, the primary fippable shape
-    ColorFlippable colorFlippableScript; // Script of main flippable shape to make paint trail
+    public Flippable flippableScript; // Script of main child object, the primary fippable shape
+    public ColorFlippable colorFlippableScript; // Script of main flippable shape to make paint trail
     Vector3 previousMousePos;
 
     // GHOST PLAYER
@@ -87,11 +87,11 @@ public class Shape : MonoBehaviour {
 
     }
 
-    //public void flipInEditor(Vector3 mouseClickPos)
-    //{
-    //    flippableScript.flip180DegImmediately(mouseClickPos);
-    //    mainPaintTrailScript.instantiatePaintCanvasElement();
-    //}
+    public void flipInEditor(Vector3 mouseClickPos, GameObject container)
+    {
+        flippableScript.flip180DegImmediately(mouseClickPos);
+        colorFlippableScript.instantiatePaintSurface(container);
+    }
 
     public void createAndFlipGhost(Vector3 mouseClickPos)
     {

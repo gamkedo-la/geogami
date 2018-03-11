@@ -13,6 +13,7 @@ public class PaintMaterials : MonoBehaviour
     public Material paintMaterial;
     public Material completedMaterial;
     public Material shadowMaterial;
+    public Material paintSurfaceMaterial;
 
     Material shapeMaterialOverride;
     Material paintMaterialOverride;

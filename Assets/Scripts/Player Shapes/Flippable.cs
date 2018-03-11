@@ -23,8 +23,8 @@ public class Flippable : MonoBehaviour {
     public bool rotating = false;
 
     // Painting
-    ColorFlippable colorFlippableScript;
-    PaintTrail paintTrailScript;
+    public ColorFlippable colorFlippableScript;
+    public PaintTrail paintTrailScript;
 
     // ----------------------------
     // Initialization

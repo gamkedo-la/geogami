@@ -2,14 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BarrierManagerInEditor : MonoBehaviour {
+public class PaintSurfaceContainer : MonoBehaviour {
 
-
-    // -----------
-    // Barrier Clear
-    // -----------
-
-    public void clearAllBarriers()
+    public void clearAllPaintSurfaces()
     {
 
         var children = new List<Transform>();
@@ -23,4 +18,5 @@ public class BarrierManagerInEditor : MonoBehaviour {
         }
 
     }
+
 }

@@ -425,8 +425,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1597258045574480}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
+  m_LocalPosition: {x: -6, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4389722568781338}
@@ -1164,6 +1164,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flippable: {fileID: 1256032647379830}
+  flippableScript: {fileID: 114546767951382102}
+  colorFlippableScript: {fileID: 114190641168536676}
 --- !u!114 &114134699954972270
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1187,6 +1189,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paintTracker: {fileID: 0}
+  myPlayerMesh: {fileID: 1123666309933712}
+  paintTrailScript: {fileID: 114093945712678364}
 --- !u!114 &114440817768553528
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1208,6 +1212,8 @@ MonoBehaviour:
   paintMaterial: {fileID: 0}
   completedMaterial: {fileID: 0}
   shadowMaterial: {fileID: 2100000, guid: 9d8d6ccf5a21348bcb0e8e4a92fed67e, type: 2}
+  paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
+    type: 2}
   lerpDuration: 10
 --- !u!114 &114546767951382102
 MonoBehaviour:
@@ -1223,6 +1229,8 @@ MonoBehaviour:
   vertices_GO: {fileID: 1256851773665656}
   rotationSpeed: 30
   rotating: 0
+  colorFlippableScript: {fileID: 0}
+  paintTrailScript: {fileID: 114093945712678364}
 --- !u!135 &135067454518361956
 SphereCollider:
   m_ObjectHideFlags: 1

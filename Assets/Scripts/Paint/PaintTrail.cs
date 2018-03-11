@@ -103,33 +103,42 @@ public class PaintTrail : MonoBehaviour
 
 
 
-    //// ---------------
-    //// Editor Mode
-    //// ---------------
+    // ---------------
+    // Editor Mode
+    // ---------------
 
 
-    //public void instantiatePaintCanvasElement()
-    //{
-    //    // Instantiate a copy of this player shape gameObject
-    //    GameObject myCopy = Instantiate(gameObject, transform.position, transform.rotation, paintCanvas.transform);
-    //    PaintTrail myCopyPaintTrailScript = myCopy.GetComponent<PaintTrail>();
-    //    myCopyPaintTrailScript.transformIntoPaintCanvas();
+    public void instantiatePaintSurfaceElement(GameObject container)
+    {
 
-    //}
+        Debug.Log("instantiatePaintSurfaceElement");
+        // Instantiate a copy of this player shape gameObject
+        GameObject myCopy = Instantiate(gameObject, transform.position, transform.rotation, container.transform);
 
-    //public void transformIntoPaintCanvas()
-    //{
-    //    setMaterial(canvasMaterial);
-    //    transformChildObjectsIntoTokensEditor();
-    //    destroyChildObjectsEditor();
-    //    changeTag("PaintCanvas");
-    //    disableAllScripts();
+        // Initiallize it as a PaintSurface object
+        PaintTrail myCopyPaintTrailScript = myCopy.GetComponent<PaintTrail>();
+        myCopyPaintTrailScript.transformIntoPaintSurface();
 
-    //    // Set z distance to canvas distance
-    //    Vector3 temp = transform.position;
-    //    temp.z = paintSurfaceDistance;
-    //    transform.position = temp;
-    //}
+        // Change material
+        PaintMaterials myCopyPaintMaterialsScript = myCopy.GetComponent<PaintMaterials>();
+        myCopyPaintMaterialsScript.setMaterial(myCopyPaintMaterialsScript.paintSurfaceMaterial);
+
+        // Create tokens from vertices
+        Debug.Log("Create Tokens");
+
+    }
+
+    public void transformIntoPaintSurface()
+    {
+        //transformChildObjectsIntoTokensEditor();
+        changeTag("PaintSurface");
+        //disableAllScripts();
+
+        // Set z distance to canvas distance
+        Vector3 temp = transform.position;
+        temp.z = paintSurfaceDistance;
+        transform.position = temp;
+    }
 
 
     // ---------------

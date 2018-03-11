@@ -5,6 +5,8 @@ using UnityEngine;
 public class ColorFlippable : MonoBehaviour {
 
     public GameObject paintTracker;
+    public GameObject myPlayerMesh;
+    public PaintTrail paintTrailScript;
 
 	// override from parents
     public void overrideColorMaterials (Material shapeMaterial, Material paintMaterial, Material completedMaterial) 
@@ -31,11 +33,17 @@ public class ColorFlippable : MonoBehaviour {
             {
                 PaintTrail childScript = child.gameObject.GetComponent<PaintTrail>();
                 childScript.initialize(paintTrackerGO, paintSurface, barrierTracker, tokenTracker, tokenSphere);
+
+                paintTrailScript = childScript;
             }
         }
 
     }
 
 
+    public void instantiatePaintSurface(GameObject container)
+    {
+        paintTrailScript.instantiatePaintSurfaceElement(container);
+    }
 	
 }

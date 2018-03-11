@@ -6,6 +6,30 @@ public class PaintTracker : MonoBehaviour {
 
     public float zTranslationStepSize = 0.5f;
 
+
+    // --------------------
+    // Main Game Loops
+    // --------------------
+
+    void Awake()
+    {
+        // Retrieve all Shapes from Level
+        GameObject[] levelSurfaces = GameObject.FindGameObjectsWithTag("PaintSurface");
+
+        //Transform paintSurfaceContainer = transform.Find("PaintSurface");
+
+        foreach (GameObject startSurface in levelSurfaces)
+        {
+            // Change parent to game core
+            startSurface.transform.SetParent(transform);
+        }
+    }
+
+
+    // --------------------
+    // Methods
+    // --------------------
+
     public void addPaintTrail(GameObject paintTrailToAdd)
     {
         paintTrailToAdd.transform.SetParent(transform);

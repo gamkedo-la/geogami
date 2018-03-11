@@ -16,4 +16,6 @@ public class Barrier : MonoBehaviour {
 
         }
     }
+
+
 }

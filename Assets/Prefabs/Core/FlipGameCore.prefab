@@ -229,7 +229,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.2324827, g: 0.26503026, b: 0.31617647, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -284,6 +284,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e45a953d944324d2f9d9796a1533481d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shapeTracker: {fileID: 4216013859810368}
+  paintTracker: {fileID: 4278687314746302}
 --- !u!114 &114660983451016474
 MonoBehaviour:
   m_ObjectHideFlags: 1

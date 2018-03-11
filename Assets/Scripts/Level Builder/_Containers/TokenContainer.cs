@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TokenManagerInEditor : MonoBehaviour {
+public class TokenContainer : MonoBehaviour {
 
     // -----------
     // Token Clear
