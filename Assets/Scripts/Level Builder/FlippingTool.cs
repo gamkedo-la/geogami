@@ -52,10 +52,11 @@ public class FlippingTool : MonoBehaviour {
         foreach (GameObject child in allPlayerShapes)
         {
             Debug.Log("foreach");
-            if (child.activeSelf)
+            PaintTrail childPaintTrailScript = child.GetComponent<PaintTrail>();
+
+            if (child.activeSelf && childPaintTrailScript)
             {
                 Debug.Log("activeSelf");
-                PaintTrail childPaintTrailScript = child.GetComponent<PaintTrail>();
                 childPaintTrailScript.instantiatePaintSurfaceElement(paintSurfaceContainer);
             }
 
