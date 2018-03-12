@@ -78,7 +78,7 @@ public class FlippingTool : MonoBehaviour {
 
     public void clearAllTokens()
     {
-        TokenContainer tcScript = barrierContainer.GetComponent<TokenContainer>();
+        TokenContainer tcScript = tokenContainer.GetComponent<TokenContainer>();
         tcScript.clearAllTokens();
     }
 
