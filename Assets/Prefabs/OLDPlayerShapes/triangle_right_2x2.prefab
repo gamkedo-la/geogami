@@ -71,7 +71,7 @@ GameObject:
   - component: {fileID: 4666013733079826}
   - component: {fileID: 114346515332853320}
   m_Layer: 0
-  m_Name: New Prefab 1
+  m_Name: triangle_right_2x2
   m_TagString: Shape
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -568,9 +568,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 403e85ab72095994db1c4f63e162e113, type: 3}
 --- !u!114 &114059042675839278

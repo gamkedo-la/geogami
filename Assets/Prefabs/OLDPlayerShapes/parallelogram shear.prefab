@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 4509812207457374}
   - component: {fileID: 114660634017662700}
   m_Layer: 0
-  m_Name: Shear_Square
+  m_Name: parallelogram shear
   m_TagString: Shape
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -701,9 +701,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: fdbb0c4ce0b974cbf8967d8d083faab8, type: 3}
 --- !u!114 &114085247169258524
