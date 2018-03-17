@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class TokenGridCreator : MonoBehaviour
 {
@@ -47,7 +48,8 @@ public class TokenGridCreator : MonoBehaviour
 
     public void instantiateToken(Vector3 location)
     {
-        GameObject newToken = Instantiate(tokenToInstantiate, location, Quaternion.identity);
+        GameObject newToken = PrefabUtility.InstantiatePrefab(tokenToInstantiate as GameObject) as GameObject;
+        newToken.transform.position = location;
         newToken.transform.parent = tokenContainer;
 
     }

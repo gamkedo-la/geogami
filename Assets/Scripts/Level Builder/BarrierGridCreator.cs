@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class BarrierGridCreator : MonoBehaviour {
 
@@ -49,7 +50,9 @@ public class BarrierGridCreator : MonoBehaviour {
 
     public void instantiateBarrier(Vector3 location)
     {
-        GameObject newBarrier = Instantiate(barrierToInstantiate, location, Quaternion.identity);
+
+        GameObject newBarrier = PrefabUtility.InstantiatePrefab(barrierToInstantiate as GameObject) as GameObject;
+        newBarrier.transform.position = location;
         newBarrier.transform.parent = barrierContainer;
 
     }
