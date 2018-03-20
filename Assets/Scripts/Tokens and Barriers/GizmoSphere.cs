@@ -2,16 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BarrierSphere : Barrier {
+public class GizmoSphere : MonoBehaviour {
 
-    public float radius = .05f;
     public Color sphereColor;
 
     void OnDrawGizmos()
     {
         Gizmos.color = sphereColor;
-        Gizmos.DrawSphere(transform.position, radius);
+        Gizmos.DrawSphere(transform.position, 0.05f);
     }
-   
 }
-
