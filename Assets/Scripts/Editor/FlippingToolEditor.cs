@@ -71,7 +71,11 @@ public class FlippingToolEditor : Editor
     {
         base.OnInspectorGUI();
 
+        EditorGUILayout.Space();
+        EditorGUILayout.Space();
+        EditorGUILayout.Space();
 
+        EditorGUILayout.LabelField("LEVEL FLIPPING TOOLS: ");
         inFlipMode = EditorGUILayout.Toggle("Activate Flip Mode", inFlipMode);
 
         if (inFlipMode && !oldinFlipMode) // Just activated toggle
@@ -101,21 +105,6 @@ public class FlippingToolEditor : Editor
         }
 
 
-        EditorGUILayout.Space();
-        EditorGUILayout.Space();
-        EditorGUILayout.Space();
-        EditorGUILayout.Space();
-
-        GUILayout.BeginHorizontal();
-        GUILayout.Space(100);
-        if (GUILayout.Button("Clear Entire Canvas", GUILayout.Width(150)))
-        {
-            scriptFlippingTool.clearAllPaintSurface();
-            scriptFlippingTool.clearAllBarriers();
-            scriptFlippingTool.clearAllTokens();
-        }
-
-        GUILayout.EndHorizontal();
 
     }
 }

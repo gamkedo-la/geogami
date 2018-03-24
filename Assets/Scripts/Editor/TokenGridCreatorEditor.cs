@@ -22,6 +22,9 @@ public class TokenGridCreatorEditor : Editor
     {
         base.OnInspectorGUI();
 
+        EditorGUILayout.Space();
+        EditorGUILayout.Space();
+        EditorGUILayout.Space();
 
         if (GUILayout.Button("Update Grid Size"))
         {
@@ -39,11 +42,17 @@ public class TokenGridCreatorEditor : Editor
         //clearAllTokens
         EditorGUILayout.Space();
         EditorGUILayout.Space();
+        EditorGUILayout.Space();
+        EditorGUILayout.Space();
+        EditorGUILayout.Space();
 
         if (GUILayout.Button("Clear All Tokens"))
         {
             scriptTokenGridCreator.clearAllTokens();
         }
+        EditorGUILayout.Space();
+        EditorGUILayout.Space();
+        EditorGUILayout.Space();
     }
 }
 

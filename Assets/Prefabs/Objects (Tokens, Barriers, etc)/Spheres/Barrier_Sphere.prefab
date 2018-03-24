@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
-  sphereColor: {r: 0.9034481, g: 0, b: 1, a: 1}
+  sphereColor: {r: 1, g: 0.6691177, b: 0.6691177, a: 1}
 --- !u!135 &135017867588990738
 SphereCollider:
   m_ObjectHideFlags: 1

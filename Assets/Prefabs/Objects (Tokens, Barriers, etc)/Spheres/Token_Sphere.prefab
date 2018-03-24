@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 33971444693441750}
   - component: {fileID: 23381426537564594}
   - component: {fileID: 114292210246780836}
+  - component: {fileID: 114042859362710340}
   m_Layer: 0
   m_Name: Token_Sphere
   m_TagString: Token
@@ -49,7 +50,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1603782045063004}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -84,6 +85,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1603782045063004}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114042859362710340
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1603782045063004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf3590be4dd74023b0dcd33e2b9b368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sphereColor: {r: 0, g: 1, b: 0, a: 0.984}
 --- !u!114 &114292210246780836
 MonoBehaviour:
   m_ObjectHideFlags: 1

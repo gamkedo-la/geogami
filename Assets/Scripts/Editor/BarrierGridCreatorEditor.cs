@@ -22,6 +22,9 @@ public class BarrierGridCreatorEditor : Editor
     {
         base.OnInspectorGUI();
 
+        EditorGUILayout.Space();
+        EditorGUILayout.Space();
+        EditorGUILayout.Space();
 
         if (GUILayout.Button("Update Grid Size"))
         {
@@ -40,11 +43,17 @@ public class BarrierGridCreatorEditor : Editor
         //clearAllBarriers
         EditorGUILayout.Space();
         EditorGUILayout.Space();
+        EditorGUILayout.Space();
+        EditorGUILayout.Space();
+        EditorGUILayout.Space();
 
         if (GUILayout.Button("Clear All Barriers"))
         {
             scriptBarrierGridCreator.clearAllBarriers();
         }
+        EditorGUILayout.Space();
+        EditorGUILayout.Space();
+        EditorGUILayout.Space();
     }
 }
 
