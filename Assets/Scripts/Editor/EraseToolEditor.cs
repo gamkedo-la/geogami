@@ -30,11 +30,13 @@ public class EraseToolEditor : Editor
         GUILayout.BeginHorizontal();
         GUILayout.Space(100);
         if (GUILayout.Button("Clear Entire Canvas", GUILayout.Width(150)))
-        {
-            scriptEraseTool.clearAllPaintSurface();
-            scriptEraseTool.clearAllBarriers();
-            scriptEraseTool.clearAllTokens();
-        }
+		{	if (EditorUtility.DisplayDialog ("Warning", "Are you sure? ", "Yes", "No")) {
+				scriptEraseTool.clearAllPaintSurface();
+				scriptEraseTool.clearAllBarriers();
+				scriptEraseTool.clearAllTokens();
+			}
+
+		}
 
         GUILayout.EndHorizontal();
 
