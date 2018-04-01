@@ -19,6 +19,4 @@ public class Vertices : MonoBehaviour {
         return vertices;
     }
 
-
-
 }

@@ -128,12 +128,19 @@ public class ShapeTracker : MonoBehaviour
 
     public void selectNewShape(GameObject newShape)
     {
+        // Call deselect on old shape
+        if (currentSelectedShapeScript)
+        {
+            currentSelectedShapeScript.deselect();
+        }
+
         currentSelectedShape = newShape;
         currentSelectedShapeScript = currentSelectedShape.GetComponent<Shape>();
 
-        //Debug.Log("-- selectNewShape --");
-        //Debug.Log("currentlySelectedShape: " + currentlySelectedShape);
-        //Debug.Log("selectedShapeScript: " + selectedShapeScript);
+        // Call select on new shape
+        currentSelectedShapeScript.select();
+
+
     }
 
 

@@ -346,6 +346,28 @@ public class Flippable : MonoBehaviour {
         paintTrailScript.transformIntoShadow(); // Relocates playerMesh to Paint Tracker
     }
 
+
+    // -----------
+    // Selection
+    // -----------
+
+    public void deselect()
+    {
+        // TEMPORARY COMMENT OUT
+        //Outline outlineScript = transform.Find("Outline").GetComponent<Outline>();
+
+        //outlineScript.deselect();
+    }
+
+    public void select()
+    {
+
+        // TEMPORARY COMMENT OUT
+        //Outline outlineScript = transform.Find("Outline").GetComponent<Outline>();
+
+        //outlineScript.select();
+    }
+
     // -----------
     // Level completed
     // -----------

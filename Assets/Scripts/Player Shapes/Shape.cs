@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -114,6 +115,9 @@ public class Shape : MonoBehaviour {
     }
 
 
+
+
+
     bool areThereGhosts()
     {
 
@@ -145,9 +149,19 @@ public class Shape : MonoBehaviour {
     }
 	
 
+    // -----------
+    // Selection
+    // -----------
 
+    public void deselect()
+    {
+        flippableScript.deselect();
+    }
 
-
+    public void select()
+    {
+        flippableScript.select();
+    }
 
     // -----------
     // Level completed
