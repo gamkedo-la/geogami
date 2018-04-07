@@ -212,12 +212,12 @@ public class Flippable : MonoBehaviour {
         // Locate index of second flipping point (using cross product)
 
 
-                    //DEBUG
-                    Debug.Log("BEFORE");
-                for (int i = 0; i < vert_V3s_x.Length; i++)
-                {
-            Debug.Log("vert_V3s[" + i + "]:  " + vert_V3s[i] );
-                }
+            //        //DEBUG
+            //        Debug.Log("BEFORE");
+            //    for (int i = 0; i < vert_V3s_x.Length; i++)
+            //    {
+            //Debug.Log("vert_V3s[" + i + "]:  " + vert_V3s[i] );
+                //}
 
         // Translate all vectors so first flip point is at origin and normalize
         for (int i = 0; i < vert_V3s.Length; i++)
@@ -227,11 +227,11 @@ public class Flippable : MonoBehaviour {
         }
 
 
-                    //DEBUG
-                    Debug.Log("AFTER");
-                for (int i = 0; i < vert_V3s_x.Length; i++) {
-                    Debug.Log("vert_V3s[" + i + "]:  " +  vert_V3s[i] );
-                }
+                //    //DEBUG
+                //    Debug.Log("AFTER");
+                //for (int i = 0; i < vert_V3s_x.Length; i++) {
+                //    Debug.Log("vert_V3s[" + i + "]:  " +  vert_V3s[i] );
+                //}
 
         // Find the angle between all vectors and the vertical line through max_x
         float[] signedAngle = new float[vert_V3s.Length];
@@ -278,11 +278,11 @@ public class Flippable : MonoBehaviour {
 
 
                 //DEBUG
-        Debug.Log("signedAngle Results");
-        for (int i = 0; i < signedAngle.Length; i++)
-        {
-            Debug.Log("signedAngle[" + i + "]:  " + signedAngle[i]);
-        }
+        //Debug.Log("signedAngle Results");
+        //for (int i = 0; i < signedAngle.Length; i++)
+        //{
+        //    Debug.Log("signedAngle[" + i + "]:  " + signedAngle[i]);
+        //}
 
 
 
@@ -309,9 +309,9 @@ public class Flippable : MonoBehaviour {
 
 
 
-        Debug.Log("index_flip_point_1: " + index_flip_point_1);
-        Debug.Log("index_flip_point_2: " + index_flip_point_2);
-        Debug.Log("index_other: " + index_other);
+        //Debug.Log("index_flip_point_1: " + index_flip_point_1);
+        //Debug.Log("index_flip_point_2: " + index_flip_point_2);
+        //Debug.Log("index_other: " + index_other);
 
         max_two_transforms[0] = vertices_transforms[index_flip_point_1];
         max_two_transforms[1] = vertices_transforms[index_flip_point_2];

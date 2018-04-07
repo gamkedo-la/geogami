@@ -134,11 +134,28 @@ public class ShapeTracker : MonoBehaviour
             currentSelectedShapeScript.deselect();
         }
 
-        currentSelectedShape = newShape;
-        currentSelectedShapeScript = currentSelectedShape.GetComponent<Shape>();
 
-        // Call select on new shape
-        currentSelectedShapeScript.select();
+
+        if (currentSelectedShape == newShape)
+        {
+            currentSelectedShape = null;
+            currentSelectedShapeScript = null;
+
+            Debug.Log("Same shape selected, deselected shape");
+        }
+        else
+        {
+            currentSelectedShape = newShape;
+            currentSelectedShapeScript = currentSelectedShape.GetComponent<Shape>();
+
+            // Call select on new shape
+            currentSelectedShapeScript.select();
+
+            Debug.Log("Selected new shape");
+        }
+
+
+
 
 
     }
