@@ -169,7 +169,7 @@ public class Flippable : MonoBehaviour {
         for (int i = 0; i < vertices_transforms.Length; i++)
         {
             vert_V3s[i] = vertices_transforms[i].position - transform.position;
-            //          Debug.Log ("vert_V3s[" + i + "]: " + vert_V3s [i]);
+                      //Debug.Log ("vert_V3s[" + i + "]: " + vert_V3s [i]);
         }
 
 
@@ -178,12 +178,12 @@ public class Flippable : MonoBehaviour {
         for (int i = 0; i < vert_V3s.Length; i++)
         {
             vert_V3s[i] = Quaternion.Euler(0, 0, angleToXaxis) * vert_V3s[i];
-            //          Debug.Log ("Quaternion.Euler(0, 0, angleToXaxis): " + Quaternion.Euler (0, 0, angleToXaxis));
-            //          Debug.Log ("vert_V3s[" + i + "]: " + vert_V3s [i]);
+                      //Debug.Log ("Quaternion.Euler(0, 0, angleToXaxis): " + Quaternion.Euler (0, 0, angleToXaxis));
+                      //Debug.Log ("vert_V3s[" + i + "]: " + vert_V3s [i]);
         }
 
         // --------------------------------------
-        // Record x values in new array
+        // Record x & y values in new array
         float[] vert_V3s_x = new float[vert_V3s.Length];
         float[] vert_V3s_y = new float[vert_V3s.Length];
         for (int i = 0; i < vert_V3s.Length; i++)
@@ -193,6 +193,136 @@ public class Flippable : MonoBehaviour {
         }
 
 
+ // New solution
+
+        // --------------------------------------
+        // Locate index of maximum x value
+
+        int index_flip_point_1;
+        int index_flip_point_2;
+        int index_other = -1;
+
+        // Find first largest element
+        float value_max_x = Mathf.Max(vert_V3s_x);
+        index_flip_point_1 = System.Array.IndexOf(vert_V3s_x, value_max_x);
+        Vector3 flipPoint1_V3 = vert_V3s[index_flip_point_1];
+        float signFlipPoint1_y = Mathf.Sign(flipPoint1_V3.y);
+
+        // --------------------------------------
+        // Locate index of second flipping point (using cross product)
+
+
+                    //DEBUG
+                    Debug.Log("BEFORE");
+                for (int i = 0; i < vert_V3s_x.Length; i++)
+                {
+            Debug.Log("vert_V3s[" + i + "]:  " + vert_V3s[i] );
+                }
+
+        // Translate all vectors so first flip point is at origin and normalize
+        for (int i = 0; i < vert_V3s.Length; i++)
+        {
+            vert_V3s[i] -= flipPoint1_V3;
+            //vert_V3s[i].Normalize();
+        }
+
+
+                    //DEBUG
+                    Debug.Log("AFTER");
+                for (int i = 0; i < vert_V3s_x.Length; i++) {
+                    Debug.Log("vert_V3s[" + i + "]:  " +  vert_V3s[i] );
+                }
+
+        // Find the angle between all vectors and the vertical line through max_x
+        float[] signedAngle = new float[vert_V3s.Length];
+        Vector3 startFromV3;
+        Vector3 axisV3;
+        if(signFlipPoint1_y > 0)
+        {
+            startFromV3 = Vector3.down;
+            axisV3 = Vector3.back;
+        }
+        else
+        {
+            startFromV3 = Vector3.up;
+            axisV3 = Vector3.forward;
+        }
+
+        for (int i = 0; i < vert_V3s.Length; i++)
+        {
+            if(i == index_flip_point_1)
+            {
+                signedAngle[i] = 360f;
+            }
+            else
+            {
+                signedAngle[i] = Vector3.SignedAngle(startFromV3, vert_V3s[i], axisV3);
+            }
+
+        }
+
+
+
+        //// Take cross product of each point with Vector.right
+        //float[] crossVertMagnitudes = new float[vert_V3s.Length];
+        //for (int i = 0; i < vert_V3s.Length; i++)
+        //{
+        //    crossVertMagnitudes[i] = Vector3.Cross(Vector3.right, vert_V3s[i]).magnitude;
+
+        //     //Invalidate points that are on the wrong side for flipping
+        //    if (Mathf.Sign(crossVertMagnitudes[i]) == signFlipPoint1_y)
+        //    {
+        //        crossVertMagnitudes[i] = 0;
+        //    }
+        //}
+
+
+                //DEBUG
+        Debug.Log("signedAngle Results");
+        for (int i = 0; i < signedAngle.Length; i++)
+        {
+            Debug.Log("signedAngle[" + i + "]:  " + signedAngle[i]);
+        }
+
+
+
+
+        // Select maximum value
+        float min_angle = Mathf.Min(signedAngle);
+        index_flip_point_2 = System.Array.IndexOf(signedAngle, min_angle);
+
+
+        // --------------------------------------
+        // Find a third index for third corner point
+        for (int i = 0; i < vert_V3s_x.Length; i++)
+        {
+            if (i != index_flip_point_1 && i != index_flip_point_2)
+            {
+                index_other = i;
+                break;
+            }
+        }
+
+
+        // --------------------------------------
+        // Save transforms to global array / variable
+
+
+
+        Debug.Log("index_flip_point_1: " + index_flip_point_1);
+        Debug.Log("index_flip_point_2: " + index_flip_point_2);
+        Debug.Log("index_other: " + index_other);
+
+        max_two_transforms[0] = vertices_transforms[index_flip_point_1];
+        max_two_transforms[1] = vertices_transforms[index_flip_point_2];
+        other_transform = vertices_transforms[index_other];
+
+
+
+
+
+ // --------------DEPRACATED ----------------------
+ /*
         // --------------------------------------
         // Locate index of two maximum x values, and index of another point
 
@@ -204,7 +334,6 @@ public class Flippable : MonoBehaviour {
         float value_x = Mathf.Max(vert_V3s_x);
         index_max_x_1 = System.Array.IndexOf(vert_V3s_x, value_x);
         // Erase first largest element (set to -999999f)
-
         vert_V3s_x[index_max_x_1] = -999999f;
 
         // Use y-value of first point to eliminate points on side that is invalid (WATCH OUT! TRICKY!)
@@ -226,9 +355,13 @@ public class Flippable : MonoBehaviour {
                 }
             }
         }
+
+
         // Find second largest element.
         value_x = Mathf.Max(vert_V3s_x);
         index_max_x_2 = System.Array.IndexOf(vert_V3s_x, value_x);
+
+
         // Find a third index for third corner point
         for (int i = 0; i < vert_V3s_x.Length; i++)
         {
@@ -238,6 +371,7 @@ public class Flippable : MonoBehaviour {
                 break;
             }
         }
+
 
         //      Debug.Log("index_max_x_1: " + index_max_x_1);
         //      Debug.Log("index_max_x_2: " + index_max_x_2);
@@ -250,12 +384,19 @@ public class Flippable : MonoBehaviour {
         //          Debug.Log("vertices_transforms[" + i + "]: " +  vertices_transforms[i].position);
         //      }
 
+ 
+
+
+
         // --------------------------------------
         // Save transforms to global array / variable
 
         max_two_transforms[0] = vertices_transforms[index_max_x_1];
         max_two_transforms[1] = vertices_transforms[index_max_x_2];
         other_transform = vertices_transforms[index_other];
+ */
+ // --------------END DEPRACATED ----------------------
+
 
 
     }
