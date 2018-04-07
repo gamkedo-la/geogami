@@ -275,7 +275,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Erik Verlage - Team Lead, \nVignesh - Music, Programming\nKlaim - Music"
+  m_Text: "Erik Verlage - Team Lead, \nVignesh - Music, Programming (editor popup),
+    levels\nKlaim - Music\nPhil Nicholson - Levels\nChrister - Levels\n"
 --- !u!222 &446497760
 CanvasRenderer:
   m_ObjectHideFlags: 0

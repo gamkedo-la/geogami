@@ -24,18 +24,18 @@ public class Outline : MonoBehaviour {
 	// Initialization
     // --------------
 	void Start () {
-        verticesScript = verticesGO.GetComponent<Vertices>();
+        //verticesScript = verticesGO.GetComponent<Vertices>();
 
-        verticesList = verticesScript.getVertices();
-        outlineList = getOutlineVerts();
+        //verticesList = verticesScript.getVertices();
+        //outlineList = getOutlineVerts();
 
-        vertcount = verticesList.Count;
+        //vertcount = verticesList.Count;
 
-        // Establish connection to verts it will follow
-        linkOutlineVerts();
+        //// Establish connection to verts it will follow
+        //linkOutlineVerts();
 
-        // Set everything to default
-        deselect();
+        //// Set everything to default
+        //deselect();
 
 	}
 
@@ -65,7 +65,7 @@ public class Outline : MonoBehaviour {
 
 	void Update()
 	{
-        updateOutlineVerts();
+        //updateOutlineVerts();
 	}
 
 
