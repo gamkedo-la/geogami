@@ -55,8 +55,8 @@ public class OutlineVert : MonoBehaviour {
 
     public void setLineThickness(float newLineThickness)
     {
-        Debug.Log("myLineCube: " + myLineCube);
-        Debug.Log("myLineCube.localScale: " + myLineCube.localScale);
+        //Debug.Log("myLineCube: " + myLineCube);
+        //Debug.Log("myLineCube.localScale: " + myLineCube.localScale);
 
         // Line
         Vector3 newScale = myLineCube.localScale;

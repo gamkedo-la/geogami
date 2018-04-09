@@ -494,19 +494,61 @@ public class Flippable : MonoBehaviour {
 
     public void deselect()
     {
-        // TEMPORARY COMMENT OUT
-        //Outline outlineScript = transform.Find("Outline").GetComponent<Outline>();
 
-        //outlineScript.deselect();
+        Transform go = transform.Find("Outline");
+        if (go)
+        {
+            Outline outlineScript = go.GetComponent<Outline>();
+            if (outlineScript)
+            {
+                outlineScript.deselect();
+            }
+        }
+
     }
 
     public void select()
     {
 
-        // TEMPORARY COMMENT OUT
-        //Outline outlineScript = transform.Find("Outline").GetComponent<Outline>();
+        Transform go = transform.Find("Outline");
+        if (go)
+        {
+            Outline outlineScript = go.GetComponent<Outline>();
+            if (outlineScript)
+            {
+                outlineScript.select();
+            }
+        }
 
-        //outlineScript.select();
+    }
+
+    public void hoverOver()
+    {
+        Transform go = transform.Find("Outline");
+        if(go)
+        {
+            Outline outlineScript = go.GetComponent<Outline>();
+            if (outlineScript)
+            {
+                outlineScript.hoverOver();
+            }
+        }
+
+
+    }
+
+    public void hoverExit()
+    {
+
+        Transform go = transform.Find("Outline");
+        if (go)
+        {
+            Outline outlineScript = go.GetComponent<Outline>();
+            if (outlineScript)
+            {
+                outlineScript.hoverExit();
+            }
+        }
     }
 
     // -----------

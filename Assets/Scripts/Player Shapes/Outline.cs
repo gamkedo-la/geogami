@@ -11,6 +11,11 @@ public class Outline : MonoBehaviour {
     public float selectedLineThickness = 0.07f;
     public float selectedSphereSize = 0.09f;
 
+    public float hoverLineThickness = 0.08f;
+    public float hoverSphereSize = 0.1f;
+
+    bool selected;
+
 
     public GameObject verticesGO;
     Vertices verticesScript;
@@ -24,18 +29,18 @@ public class Outline : MonoBehaviour {
 	// Initialization
     // --------------
 	void Start () {
-        //verticesScript = verticesGO.GetComponent<Vertices>();
+        verticesScript = verticesGO.GetComponent<Vertices>();
 
-        //verticesList = verticesScript.getVertices();
-        //outlineList = getOutlineVerts();
+        verticesList = verticesScript.getVertices();
+        outlineList = getOutlineVerts();
 
-        //vertcount = verticesList.Count;
+        vertcount = verticesList.Count;
 
-        //// Establish connection to verts it will follow
-        //linkOutlineVerts();
+        // Establish connection to verts it will follow
+        linkOutlineVerts();
 
-        //// Set everything to default
-        //deselect();
+        // Set everything to default
+        deselect();
 
 	}
 
@@ -65,7 +70,7 @@ public class Outline : MonoBehaviour {
 
 	void Update()
 	{
-        //updateOutlineVerts();
+        updateOutlineVerts();
 	}
 
 
@@ -126,10 +131,30 @@ public class Outline : MonoBehaviour {
     public void deselect()
     {
         setLineAndSphere(defaultLineThickness, defaultSphereSize);
+        selected = false;
     }
 
     public void select()
     {
         setLineAndSphere(selectedLineThickness, selectedSphereSize);
+        selected = true;
+    }
+
+    public void hoverOver()
+    {
+        setLineAndSphere(hoverLineThickness, hoverSphereSize);
+    }
+
+    public void hoverExit()
+    {
+        if(selected)
+        {
+            setLineAndSphere(selectedLineThickness, selectedSphereSize);
+        }
+        else
+        {
+            setLineAndSphere(defaultLineThickness, defaultSphereSize);
+        }
+
     }
 }
