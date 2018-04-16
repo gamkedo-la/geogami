@@ -124,7 +124,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4617872056785266}
-  - component: {fileID: 114407933412189660}
   - component: {fileID: 114674297983438166}
   m_Layer: 0
   m_Name: Vertices
@@ -446,7 +445,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4243164410287922}
-  - component: {fileID: 114075053540403020}
   - component: {fileID: 114055157894830360}
   m_Layer: 0
   m_Name: Outline
@@ -1500,25 +1498,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bce51de55ed9b474ebd25ce3a0f5b4ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114075053540403020
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1932685860894542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab844283854b841ada6b9fda38156793, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zPlaneForOutline: -5
-  defaultLineThickness: 0.05
-  defaultSphereSize: 0.07
-  selectedLineThickness: 0.09
-  selectedSphereSize: 0.11
-  hoverLineThickness: 0.08
-  hoverSphereSize: 0.1
-  verticesGO: {fileID: 1256851773665656}
 --- !u!114 &114093945712678364
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1620,17 +1599,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bce51de55ed9b474ebd25ce3a0f5b4ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114407933412189660
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1256851773665656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfbd0c98537f24949a97c80ea9978305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114440817768553528

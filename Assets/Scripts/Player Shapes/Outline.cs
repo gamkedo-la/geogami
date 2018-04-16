@@ -68,7 +68,7 @@ public class Outline : MonoBehaviour {
 	// --------------
 
 
-	void Update()
+	void LateUpdate()
 	{
         updateOutlineVerts();
 	}
