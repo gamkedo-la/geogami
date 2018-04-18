@@ -157,6 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &15090706
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -254,6 +255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &29180095
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -351,6 +353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &30131843
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -448,6 +451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &32345178
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -545,6 +549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &33233339
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -642,6 +647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &40844029
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -739,6 +745,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &47087895
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -836,6 +843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &49485851
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1029,6 +1037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &67395970
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1126,6 +1135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &73703654
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1223,6 +1233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &79150093
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1320,6 +1331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &79375931
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1417,6 +1429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &91673168
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1514,6 +1527,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &94865005
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1611,6 +1625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &101780776
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1708,6 +1723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &121097207
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1805,6 +1821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &127982173
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1902,6 +1919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &138790708
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2095,6 +2113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &143922672
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2192,6 +2211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &145718795
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2289,6 +2309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &146291108
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2386,6 +2407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &162471893
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2579,6 +2601,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &187772495
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2676,6 +2699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &188858557
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2773,6 +2797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &190532829
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2870,6 +2895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &216992634
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2967,6 +2993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &222806852
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3306,6 +3333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &226904552
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3403,6 +3431,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &246221335
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3596,6 +3625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &256621446
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3693,6 +3723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &265447639
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3790,6 +3821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &280014507
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3887,6 +3919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &280991320
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3984,6 +4017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &283309826
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4081,6 +4115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &286381748
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4178,6 +4213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &292594183
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4275,6 +4311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &293552188
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4518,6 +4555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &309503412
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4615,6 +4653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &317009281
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4712,6 +4751,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &318175519
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4809,6 +4849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &329289120
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4906,6 +4947,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &346086471
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5149,6 +5191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &353037657
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5392,6 +5435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &355715329
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5489,6 +5533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &363079581
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5586,6 +5631,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &368723459
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5683,6 +5729,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &375641663
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5780,6 +5827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &379269030
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6119,6 +6167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &389840967
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6216,6 +6265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &390849784
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6313,6 +6363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &415126928
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6410,6 +6461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &421159911
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6507,6 +6559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &428580318
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6604,6 +6657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &433287688
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6701,6 +6755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &435539119
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6798,6 +6853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &441046412
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6895,6 +6951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &442067271
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6992,6 +7049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &451376488
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7375,6 +7433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &456495068
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7472,6 +7531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &457132271
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7665,6 +7725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &476954208
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7762,6 +7823,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &483033594
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7859,6 +7921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &484394467
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7956,6 +8019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &486793508
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8053,6 +8117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &487980181
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8150,6 +8215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &502654555
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8247,6 +8313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &503251507
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8344,6 +8411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &504697075
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8537,6 +8605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &512169223
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8634,6 +8703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &529080089
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8731,6 +8801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &531706801
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8828,6 +8899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &546282781
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8947,6 +9019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &594377158
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9044,6 +9117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &601566549
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9141,6 +9215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &604999213
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9238,6 +9313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &614049045
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9431,6 +9507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &648652178
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9528,6 +9605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &648902522
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9625,6 +9703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &662990309
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9722,6 +9801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &673654715
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9819,6 +9899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &687433678
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9916,6 +9997,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &688331085
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10109,6 +10191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &721317973
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10206,6 +10289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &723339195
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10303,6 +10387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &723463826
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10400,6 +10485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &728463596
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10593,6 +10679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &747561330
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10690,6 +10777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &765160523
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10787,6 +10875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &767041997
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10884,6 +10973,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &774152751
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10981,6 +11071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &784829214
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11078,6 +11169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &791789812
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11175,6 +11267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &797437217
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11464,6 +11557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &817372817
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11561,6 +11655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &826172218
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11658,6 +11753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &826459073
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11755,6 +11851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &846597904
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11852,6 +11949,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &851454842
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12045,6 +12143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &865512057
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12238,6 +12337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &872452308
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12335,6 +12435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &884436852
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12528,6 +12629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &898098759
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12625,6 +12727,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &906214767
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12728,6 +12831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &907720461
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12921,6 +13025,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &915121669
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13018,6 +13123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &921798370
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13115,6 +13221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &941883199
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13212,6 +13319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &944030266
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13309,6 +13417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &957814796
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13406,6 +13515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &960350040
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13503,6 +13613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &961355989
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13600,6 +13711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &965273819
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13697,6 +13809,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &965957340
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13794,6 +13907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &978001505
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13891,6 +14005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &984517260
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13988,6 +14103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &990530045
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14085,6 +14201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &999044369
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14182,6 +14299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1000405487
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14375,6 +14493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1002396015
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14568,6 +14687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1009563791
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14665,6 +14785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1010506114
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14908,6 +15029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1032970907
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15101,6 +15223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1061974943
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15198,6 +15321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1065713809
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15295,6 +15419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1070151547
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15392,6 +15517,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1073497468
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15489,6 +15615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1079138714
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15586,6 +15713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1080398134
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15683,6 +15811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1090591924
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15780,6 +15909,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1099642717
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15877,6 +16007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1102406033
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15974,6 +16105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1105321369
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16071,6 +16203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1110103828
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16168,6 +16301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1112235267
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16265,6 +16399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1121910870
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16362,6 +16497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1125468238
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16682,6 +16818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1138577294
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16779,6 +16916,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1154785727
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16876,6 +17014,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1168962446
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16973,6 +17112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1169785066
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17070,6 +17210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1191941296
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17246,6 +17387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1211604906
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17343,6 +17485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1212179341
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17440,6 +17583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1214149228
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17535,8 +17679,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shapeMaterial: {fileID: 0}
-  paintMaterial: {fileID: 0}
-  completedMaterial: {fileID: 0}
+  paintMaterial: {fileID: 2100000, guid: 8ec325c1acce24e25b451daf4bf13d87, type: 2}
+  completedMaterial: {fileID: 2100000, guid: 8ec325c1acce24e25b451daf4bf13d87, type: 2}
 --- !u!1 &1230133925
 GameObject:
   m_ObjectHideFlags: 0
@@ -17581,6 +17725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1230133928
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17678,6 +17823,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1231513159
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17775,6 +17921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1232450499
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17872,6 +18019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1234088146
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18065,6 +18213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1253253516
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18162,6 +18311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1262502034
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18259,6 +18409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1264358107
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18356,6 +18507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1266277559
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18549,6 +18701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1271007989
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18641,27 +18794,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 23186165301235656, guid: df55f922fc09a4ca28c1726746dc58e3,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: e109bad424fad480196aa1ade9633d15, type: 2}
-    - target: {fileID: 4389722568781338, guid: df55f922fc09a4ca28c1726746dc58e3, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114440817768553528, guid: df55f922fc09a4ca28c1726746dc58e3,
-        type: 2}
-      propertyPath: paintSurfaceMaterial
-      value: 
-      objectReference: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805, type: 2}
-    - target: {fileID: 4049835364477338, guid: df55f922fc09a4ca28c1726746dc58e3, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4049835364477338, guid: df55f922fc09a4ca28c1726746dc58e3, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+    - target: {fileID: 1411555914995050, guid: df55f922fc09a4ca28c1726746dc58e3, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: df55f922fc09a4ca28c1726746dc58e3, type: 2}
@@ -18811,6 +18946,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1290713071
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18908,6 +19044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1292015069
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19005,6 +19142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1294753297
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19248,6 +19386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1299586871
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19345,6 +19484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1301698482
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19442,6 +19582,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1307672965
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19539,6 +19680,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1308306992
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19636,6 +19778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1316673099
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19829,6 +19972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1334938686
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19926,6 +20070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1345962525
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20023,6 +20168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1366983271
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20120,6 +20266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1371061339
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20217,6 +20364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1379230434
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20314,6 +20462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1386978277
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20411,6 +20560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1388288358
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20508,6 +20658,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1399309481
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20605,6 +20756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1402723026
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20702,6 +20854,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1404769613
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20799,6 +20952,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1422821505
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20896,6 +21050,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1429987340
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20993,6 +21148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1460903274
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21090,6 +21246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1465611399
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21187,6 +21344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1472177828
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21284,6 +21442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1477722336
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21477,6 +21636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1480367794
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21623,6 +21783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1503170423
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21816,6 +21977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1520198616
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21913,6 +22075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1531763486
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22010,6 +22173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1533835670
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22107,6 +22271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1537310255
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22204,6 +22369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1541112276
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22301,6 +22467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1545509766
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22398,6 +22565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1546456130
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22495,6 +22663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1547616209
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22592,6 +22761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1554737557
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22689,6 +22859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1562072899
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22786,6 +22957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1571410415
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22883,6 +23055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1574798831
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22980,6 +23153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1579810464
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23173,6 +23347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1625488781
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23270,6 +23445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1626079639
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23367,6 +23543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1627134802
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23497,6 +23674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1667769605
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23594,6 +23772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1672111630
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23691,6 +23870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1672927124
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23934,6 +24114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1693856371
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24223,6 +24404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1704225110
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24320,6 +24502,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1710622270
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24513,6 +24696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1738466028
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24652,6 +24836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1763542062
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24749,6 +24934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1779855351
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24846,6 +25032,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1780990537
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24943,6 +25130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1787609482
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25136,6 +25324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1812202522
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25233,6 +25422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1813321265
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25330,6 +25520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1837610972
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25427,6 +25618,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1841947204
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25524,6 +25716,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1864762115
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25717,6 +25910,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1884493817
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25814,6 +26008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1889865653
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26007,6 +26202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1901437268
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26200,6 +26396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1919958062
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26297,6 +26494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1920913800
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26394,6 +26592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1921879833
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26491,6 +26690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1942061966
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26588,6 +26788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1950348496
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26685,6 +26886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1950527081
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26878,6 +27080,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1963889577
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26975,6 +27178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1969049486
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27101,6 +27305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1974311857
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27294,6 +27499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1979388943
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27391,6 +27597,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1988105462
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27488,6 +27695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1988341175
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27585,6 +27793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &1989416982
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27820,6 +28029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &2008536298
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27917,6 +28127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &2014037319
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28014,6 +28225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &2022920852
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28257,6 +28469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &2040053376
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28354,6 +28567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &2040331550
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28451,6 +28665,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &2042745522
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28548,6 +28763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &2054632647
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28645,6 +28861,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &2063276152
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28742,6 +28959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &2073860165
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28839,6 +29057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &2078277319
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28936,6 +29155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &2078561844
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29033,6 +29253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &2084146011
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29130,6 +29351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &2092879858
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29323,6 +29545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &2104815930
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29420,6 +29643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &2106475440
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29517,6 +29741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &2120693597
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29614,6 +29839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &2124791661
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29711,6 +29937,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &2132958840
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29808,6 +30035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.05
+  sphereColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &2134896447
 MeshRenderer:
   m_ObjectHideFlags: 0

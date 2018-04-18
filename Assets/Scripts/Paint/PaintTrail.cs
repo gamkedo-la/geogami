@@ -74,6 +74,7 @@ public class PaintTrail : MonoBehaviour
         // Change properties to Paint
         myCopyPaintTrailScript.transformIntoPaintTrail();
         myCopyPaintMaterialsScript.setMaterial(paintMatScript.paintMaterial);
+        myCopyPaintMaterialsScript.overridePaintMaterials(paintMatScript.shapeMaterial, paintMatScript.paintMaterial, paintMatScript.completedMaterial);
 
         paintTrackerScript.addPaintTrail(myCopy);
     }
@@ -82,6 +83,7 @@ public class PaintTrail : MonoBehaviour
     {
 
         changeTag("PaintTrail");
+
     }
 
 

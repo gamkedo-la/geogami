@@ -169,6 +169,6 @@ public class Shape : MonoBehaviour {
 
     public void startLevelComplete()
     {
-        // TODO if needed
+        flippableScript.startLevelComplete();
     }
 }

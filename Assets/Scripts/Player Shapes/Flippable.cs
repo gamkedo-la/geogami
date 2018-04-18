@@ -557,6 +557,15 @@ public class Flippable : MonoBehaviour {
 
     public void startLevelComplete()
     {
-        // TODO if needed
+        Transform go = transform.Find("Outline");
+        if (go)
+        {
+            Outline outlineScript = go.GetComponent<Outline>();
+            if (outlineScript)
+            {
+                outlineScript.startLevelComplete();
+            }
+        }
+
     }
 }

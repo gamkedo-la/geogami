@@ -77,4 +77,33 @@ public class OutlineVert : MonoBehaviour {
         newScaleSphere.z = newSphereSize;
         myLineCube.localScale = newScaleSphere;
     }
+
+    // -----------
+    // Level completed
+    // -----------
+
+    public void startLevelComplete()
+    {
+
+        StartCoroutine(outlineFade(0f, .5f)); // TODO remove Magic number
+    }
+
+
+    IEnumerator outlineFade(float alphaFinal, float aTime)
+    {
+        float alpha = myLineCube.GetComponent<Renderer>().material.color.a;
+        Color newColor = myLineCube.GetComponent<Renderer>().material.color;
+
+        for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / aTime)
+        {
+
+            newColor.a = Mathf.Lerp(alpha, alphaFinal, t);
+
+            myLineCube.GetComponent<Renderer>().material.SetColor("_Color", newColor);
+            mySphere.GetComponent<Renderer>().material.SetColor("_Color", newColor);
+
+            yield return null;
+        }
+        //Destroy(gameObject);  // Removed 2018-04-17 by Erik, unnecessary to destroy outline
+    }
 }

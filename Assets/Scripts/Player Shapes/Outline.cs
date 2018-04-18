@@ -15,6 +15,7 @@ public class Outline : MonoBehaviour {
     public float hoverSphereSize = 0.1f;
 
     bool selected;
+    bool active;
 
 
     public GameObject verticesGO;
@@ -29,6 +30,9 @@ public class Outline : MonoBehaviour {
 	// Initialization
     // --------------
 	void Start () {
+
+        active = true;
+
         verticesScript = verticesGO.GetComponent<Vertices>();
 
         verticesList = verticesScript.getVertices();
@@ -70,7 +74,17 @@ public class Outline : MonoBehaviour {
 
 	void LateUpdate()
 	{
-        updateOutlineVerts();
+        if(active)
+        {
+            updateOutlineVerts();
+        }
+        else
+        {
+            
+
+
+        }
+
 	}
 
 
@@ -142,19 +156,40 @@ public class Outline : MonoBehaviour {
 
     public void hoverOver()
     {
-        setLineAndSphere(hoverLineThickness, hoverSphereSize);
+        if(active)
+        {
+            setLineAndSphere(hoverLineThickness, hoverSphereSize);
+        }
+
     }
 
     public void hoverExit()
     {
-        if(selected)
+        if (active)
         {
-            setLineAndSphere(selectedLineThickness, selectedSphereSize);
-        }
-        else
-        {
-            setLineAndSphere(defaultLineThickness, defaultSphereSize);
+            if (selected)
+            {
+                setLineAndSphere(selectedLineThickness, selectedSphereSize);
+            }
+            else
+            {
+                setLineAndSphere(defaultLineThickness, defaultSphereSize);
+            }
         }
 
+    }
+
+    // -----------
+    // Level completed
+    // -----------
+
+    public void startLevelComplete()
+    {
+        active = false;
+        foreach (Transform outlineVert in outlineList)
+        {
+            OutlineVert outlineVertScript = outlineVert.GetComponent<OutlineVert>();
+            outlineVertScript.startLevelComplete();
+        }
     }
 }

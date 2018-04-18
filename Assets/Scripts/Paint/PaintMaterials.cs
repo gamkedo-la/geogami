@@ -92,6 +92,11 @@ public class PaintMaterials : MonoBehaviour
 
     public void lerpBetweenMaterials(Material mat1, Material mat2, float duration)
     {
+
+        Debug.Log("lerpBetweenMaterials");
+        Debug.Log("mat1 : " + mat1);
+        Debug.Log("mat2 : " + mat2);
+
         lerpingBetweenMaterials = true;
         lerpMaterialStart = mat1;
         lerpMaterialEnd = mat2;
