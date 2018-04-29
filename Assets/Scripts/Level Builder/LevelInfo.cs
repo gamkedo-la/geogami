@@ -6,6 +6,9 @@ public class LevelInfo : MonoBehaviour {
 
     public string levelName;
     public int levelTrack;
+	public bool isScoreable = false;
+
+	public bool IsLevelComplete { get; set; }
 
 	// Use this for initialization
 	void Start () {

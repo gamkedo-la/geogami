@@ -38,6 +38,7 @@ public class TokenTracker : MonoBehaviour {
         if (transform.childCount < 1 && !levelComplete)
         {
             levelComplete = true;
+            GameObject.Find("Level Info").GetComponent<LevelInfo>().IsLevelComplete = true;
             startLevelComplete();
         }
     }

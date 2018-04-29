@@ -3,8 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shape : MonoBehaviour {
-    
+public class Shape : MonoBehaviour
+{
+
 
     public GameObject flippable;
     public Flippable flippableScript; // Script of main child object, the primary fippable shape
@@ -50,7 +51,9 @@ public class Shape : MonoBehaviour {
                         // Move to new location
                         flippableScript.flip180DegAnimated(previousMousePos);
 
-
+                        // Update number of flips
+                        if (GameObject.Find("Score") != null)
+                            GameObject.Find("Score").GetComponent<ScoreManager>().CurrentScore++;
                     }
                     else
                     {
@@ -147,7 +150,7 @@ public class Shape : MonoBehaviour {
         }
 
     }
-	
+
 
     // -----------
     // Selection
