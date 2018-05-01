@@ -34,6 +34,8 @@ public class ScoreManager : MonoBehaviour
         CurrentScore = 0;
         if (PlayerPrefs.HasKey(bestScoreKey)) // Load score
             bestScore = PlayerPrefs.GetInt(bestScoreKey);
+        else
+            bestScore = levelInfo.GetComponent<LevelInfo>().initialBestScore;
 
         if (resetter != null)
             resetter.GetComponent<Button>().onClick.AddListener(ResetScore);
@@ -60,18 +62,34 @@ public class ScoreManager : MonoBehaviour
     void UpdateDisplayText()
     {
         // print("Current score: " + CurrentScore);
-        const string numOfFlipsDescriptor = "Number of flips: ";
+        const string numOfFlipsDescriptor = "Flips: ";
         noOfFlips.GetComponent<Text>().text = numOfFlipsDescriptor +
             CurrentScore;
 
-        const string sNumOfFlipsDescriptor = "Shortest number of flips: ";
+        const string sNumOfFlipsDescriptor = "Best: ";
         sNoOfFlips.GetComponent<Text>().text = sNumOfFlipsDescriptor +
-            (bestScore == int.MaxValue ? "" : bestScore.ToString());
+            (bestScore == int.MaxValue ? "-" : bestScore.ToString());
     }
 
     void ResetScore()
     {
         PlayerPrefs.DeleteKey(bestScoreKey);
         bestScore = int.MaxValue;
+    }
+
+    void OnGUI()
+    {
+        // Update UI text according to screen size
+
+        GetComponent<RectTransform>().sizeDelta = new Vector2(Screen.width, Screen.height);
+
+        float resizeFactor = Screen.height;
+        Vector2 resizeVector = new Vector2(resizeFactor, resizeFactor / 5);
+
+        noOfFlips.GetComponent<RectTransform>().sizeDelta = resizeVector;
+        noOfFlips.GetComponent<Text>().fontSize = (int)resizeFactor / 10;
+
+        sNoOfFlips.GetComponent<RectTransform>().sizeDelta = resizeVector;
+        sNoOfFlips.GetComponent<Text>().fontSize = (int)resizeFactor / 10;
     }
 }
