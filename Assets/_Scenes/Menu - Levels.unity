@@ -2593,6 +2593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseScale: 0.2
   hoverScale: 0.22
+  sceneToLoad: ErikV_001a_Build-A-Cube
 --- !u!1 &1352253447
 GameObject:
   m_ObjectHideFlags: 0
@@ -2842,6 +2843,23 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1340173337}
           m_MethodName: myOnMouseExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1340173337}
+          m_MethodName: myOnMouseClick
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
