@@ -946,6 +946,10 @@ Prefab:
       propertyPath: selectedShapeScript
       value: 
       objectReference: {fileID: 907505875}
+    - target: {fileID: 1467404045720136, guid: e01ca0ea1f1a44686940bbad466b92c5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e01ca0ea1f1a44686940bbad466b92c5, type: 2}
   m_IsPrefabParent: 0
@@ -1504,6 +1508,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1381476054658386, guid: 16cc206e2857044ada50e78833e51e6b, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1740089784732732, guid: 16cc206e2857044ada50e78833e51e6b, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 16cc206e2857044ada50e78833e51e6b, type: 2}
   m_IsPrefabParent: 0
@@ -1642,6 +1654,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelName: 
   levelTrack: 0
+  isScoreable: 0
+  initialBestScore: 2147483647
 --- !u!1 &2009972716
 GameObject:
   m_ObjectHideFlags: 0
