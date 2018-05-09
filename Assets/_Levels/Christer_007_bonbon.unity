@@ -1562,6 +1562,48 @@ Transform:
   m_PrefabParentObject: {fileID: 4049835364477338, guid: 6901cce0885fe44328a7ed9da7e7551a,
     type: 2}
   m_PrefabInternal: {fileID: 930824414}
+--- !u!1001 &1025194760
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4990116292367564, guid: 60f9fee87bf40d14ca71ae8f7d3811fd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990116292367564, guid: 60f9fee87bf40d14ca71ae8f7d3811fd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990116292367564, guid: 60f9fee87bf40d14ca71ae8f7d3811fd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990116292367564, guid: 60f9fee87bf40d14ca71ae8f7d3811fd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990116292367564, guid: 60f9fee87bf40d14ca71ae8f7d3811fd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990116292367564, guid: 60f9fee87bf40d14ca71ae8f7d3811fd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990116292367564, guid: 60f9fee87bf40d14ca71ae8f7d3811fd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990116292367564, guid: 60f9fee87bf40d14ca71ae8f7d3811fd, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 60f9fee87bf40d14ca71ae8f7d3811fd, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1131941760
 Prefab:
   m_ObjectHideFlags: 0
@@ -2755,3 +2797,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelName: 
   levelTrack: 0
+  isScoreable: 0
+  initialBestScore: 2147483647
