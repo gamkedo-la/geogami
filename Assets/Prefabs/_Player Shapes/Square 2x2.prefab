@@ -1592,7 +1592,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shapeMaterialDefault: {fileID: 2100000, guid: e109bad424fad480196aa1ade9633d15,
     type: 2}
-  paintMaterialDefault: {fileID: 2100000, guid: 38266c1ba942e4690b6c1b741bb602c9,
+  paintMaterialDefault: {fileID: 2100000, guid: 7b84a70631d1a4d41805423de0c6529e,
     type: 2}
   completedMaterialDefault: {fileID: 2100000, guid: 3736b00a1015b4cb9bfafa2905e01d48,
     type: 2}

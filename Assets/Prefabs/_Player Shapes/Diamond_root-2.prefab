@@ -1516,7 +1516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shapeMaterialDefault: {fileID: 2100000, guid: 721972a53428641588ab71172d51a986,
     type: 2}
-  paintMaterialDefault: {fileID: 2100000, guid: 4d39098c63e72451d9a9889cba928e10,
+  paintMaterialDefault: {fileID: 2100000, guid: 7b84a70631d1a4d41805423de0c6529e,
     type: 2}
   completedMaterialDefault: {fileID: 2100000, guid: 9a320bf2f3c6b445e92cd004396d9674,
     type: 2}
