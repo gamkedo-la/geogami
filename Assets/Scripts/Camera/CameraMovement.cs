@@ -5,16 +5,20 @@ using UnityEngine;
 public class CameraMovement : MonoBehaviour
 {
 
+    public float delayMoveIn = 0f;
+    public float durationMoveIn = 1f;
+    public float delayMoveOut = .2f;
+    public float durationMoveOut = 1f;
 
-    public Vector3 levelStartPosition = new Vector3(-10f, 0f, -10f);
-    public Vector3 levelPosition = new Vector3(0f, 0f, -10f);
-    public Vector3 levelEndPosition = new Vector3(10f, 0f, -10f);
+    public Vector3 cameraStartPosition = new Vector3(-30f, 0f, -10f);
+    public Vector3 cameraLevelPosition = new Vector3(0f, 0f, -10f);
+    public Vector3 cameraEndPosition = new Vector3(30f, 0f, -10f);
 
-    public float smoothTime = 0.3F;
+    float smoothTime = 0.3F;
     public bool moving = false;
 
-
-    Transform target;
+    Vector3 startV3;
+    Vector3 targetV3;
     Vector3 velocity = Vector3.zero;
 
 
@@ -22,41 +26,55 @@ public class CameraMovement : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        
+        cameraMoveFromTo(cameraStartPosition, cameraLevelPosition, delayMoveIn, durationMoveIn);
 
     }
 
 
-
-    IEnumerator cameraMoveFromToDuration(Vector3 pos1, Vector3 pos2, float duration)
+    public void startLevelComplete()
     {
-        yield return 0;
+        cameraMoveFromTo(cameraLevelPosition, cameraEndPosition, delayMoveOut, durationMoveOut);
     }
 
 
-//    StartCoroutine(LerpFromTo(transform.position, newDesiredPosition, 1f) );
-//}
-//}
- 
-//IEnumerator LerpFromTo(Vector3 pos1, Vector3 pos2, float duration)
-//{
-//    for (float t = 0f; t < duration; t += Time.deltaTime)
-//    {
-//        transform.position = Vector3.Lerp(pos1, pos2, t / duration);
-//        yield return 0;
-//    }
-//    transform.position = pos2;
-//}
+    void cameraMoveFromTo(Vector3 pos1, Vector3 pos2, float delay, float duration)
+    {
+        
+        transform.position = pos1;
 
-    //public class ExampleClass : MonoBehaviour
-    //{
-    //    public Transform target;
-    //    public float smoothTime = 0.3F;
-    //    private Vector3 velocity = Vector3.zero;
-    //    void Update()
-    //    {
-    //        Vector3 targetPosition = target.TransformPoint(new Vector3(0, 5, -10));
-    //        transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
-    //    }
-    //}
+        startV3 = pos1;
+        targetV3 = pos2;
+
+        float[] delay_duration_V2 = new float[2];
+        delay_duration_V2[0] = delay;
+        delay_duration_V2[1] = duration;
+
+        StartCoroutine("cameraMove", delay_duration_V2);
+    }
+
+
+    IEnumerator cameraMove(float[] delay_duration_V2)
+    {
+        float delay = delay_duration_V2[0];
+        float duration = delay_duration_V2[1];
+
+        moving = true;
+
+        yield return new WaitForSeconds(delay);
+
+        for (float t = 0f; t < duration; t += Time.deltaTime)
+        {
+            transform.position = Vector3.Lerp(startV3, targetV3, t / duration);
+            yield return 0;
+        }
+
+        transform.position = targetV3;
+        moving = false;
+    }
+
+
+
+
 }
 
