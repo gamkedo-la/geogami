@@ -865,7 +865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shapeMaterial: {fileID: 0}
-  paintMaterial: {fileID: 2100000, guid: cc5da42b923c448ff8019faa2733e547, type: 2}
+  paintMaterial: {fileID: 0}
   completedMaterial: {fileID: 0}
 --- !u!1001 &29864390
 Prefab:
@@ -13468,7 +13468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shapeMaterial: {fileID: 0}
-  paintMaterial: {fileID: 2100000, guid: cc5da42b923c448ff8019faa2733e547, type: 2}
+  paintMaterial: {fileID: 0}
   completedMaterial: {fileID: 0}
 --- !u!1001 &549590003
 Prefab:
@@ -19691,7 +19691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shapeMaterial: {fileID: 0}
-  paintMaterial: {fileID: 2100000, guid: cc5da42b923c448ff8019faa2733e547, type: 2}
+  paintMaterial: {fileID: 0}
   completedMaterial: {fileID: 0}
 --- !u!1001 &842469599
 Prefab:
@@ -26857,7 +26857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shapeMaterial: {fileID: 0}
-  paintMaterial: {fileID: 2100000, guid: cc5da42b923c448ff8019faa2733e547, type: 2}
+  paintMaterial: {fileID: 0}
   completedMaterial: {fileID: 0}
 --- !u!4 &1135773551 stripped
 Transform:
@@ -28859,7 +28859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shapeMaterial: {fileID: 0}
-  paintMaterial: {fileID: 2100000, guid: cc5da42b923c448ff8019faa2733e547, type: 2}
+  paintMaterial: {fileID: 0}
   completedMaterial: {fileID: 0}
 --- !u!1001 &1221441950
 Prefab:
@@ -42459,7 +42459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shapeMaterial: {fileID: 0}
-  paintMaterial: {fileID: 2100000, guid: cc5da42b923c448ff8019faa2733e547, type: 2}
+  paintMaterial: {fileID: 0}
   completedMaterial: {fileID: 0}
 --- !u!1001 &1865653454
 Prefab:
