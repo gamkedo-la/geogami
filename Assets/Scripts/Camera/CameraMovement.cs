@@ -7,7 +7,7 @@ public class CameraMovement : MonoBehaviour
 
     public float delayMoveIn = 0f;
     public float durationMoveIn = 1f;
-    public float delayMoveOut = .2f;
+    public float delayMoveOut = 2f;
     public float durationMoveOut = 1f;
 
     public Vector3 cameraStartPosition = new Vector3(-30f, 0f, -10f);

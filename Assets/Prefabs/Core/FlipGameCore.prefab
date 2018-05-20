@@ -539,7 +539,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delayMoveIn: 0
   durationMoveIn: 1
-  delayMoveOut: 0.2
+  delayMoveOut: 2
   durationMoveOut: 1
   cameraStartPosition: {x: -30, y: 0, z: -10}
   cameraLevelPosition: {x: 0, y: 0, z: -10}
