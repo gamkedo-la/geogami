@@ -136,15 +136,15 @@ public class ShapeTracker : MonoBehaviour
 
 
 
-        if (currentSelectedShape == newShape)
-        {
-            currentSelectedShape = null;
-            currentSelectedShapeScript = null;
+        //if (currentSelectedShape == newShape)
+        //{
+        //    currentSelectedShape = null;
+        //    currentSelectedShapeScript = null;
 
-            Debug.Log("Same shape selected, deselected shape");
-        }
-        else
-        {
+        //    Debug.Log("Same shape selected, deselected shape");
+        //}
+        //else
+        //{
             currentSelectedShape = newShape;
             currentSelectedShapeScript = currentSelectedShape.GetComponent<Shape>();
 
@@ -152,7 +152,7 @@ public class ShapeTracker : MonoBehaviour
             currentSelectedShapeScript.select();
 
             Debug.Log("Selected new shape");
-        }
+        //}
 
 
 
