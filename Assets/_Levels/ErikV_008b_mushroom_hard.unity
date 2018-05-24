@@ -9522,6 +9522,11 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: 0.0000013240834
       objectReference: {fileID: 0}
+    - target: {fileID: 23648956046406570, guid: 0737e1de251194b01afc5a08a6d47310,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1aa15832602cd4483b647c23c0d713a6, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0737e1de251194b01afc5a08a6d47310, type: 2}
   m_IsPrefabParent: 0
@@ -11878,6 +11883,11 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: 0.0000018537155
       objectReference: {fileID: 0}
+    - target: {fileID: 23648956046406570, guid: 0737e1de251194b01afc5a08a6d47310,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 721972a53428641588ab71172d51a986, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0737e1de251194b01afc5a08a6d47310, type: 2}
   m_IsPrefabParent: 0
@@ -17392,6 +17402,11 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: 0.0000013240834
       objectReference: {fileID: 0}
+    - target: {fileID: 23648956046406570, guid: 0737e1de251194b01afc5a08a6d47310,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bf834332adb534a808e7428f699d3d1a, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0737e1de251194b01afc5a08a6d47310, type: 2}
   m_IsPrefabParent: 0
@@ -29640,9 +29655,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f37491c532a3441c1b4dbb236b332596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shapeMaterial: {fileID: 0}
+  shapeMaterial: {fileID: 2100000, guid: 721972a53428641588ab71172d51a986, type: 2}
   paintMaterial: {fileID: 0}
-  completedMaterial: {fileID: 0}
+  completedMaterial: {fileID: 2100000, guid: 9a320bf2f3c6b445e92cd004396d9674, type: 2}
 --- !u!1001 &1730172653
 Prefab:
   m_ObjectHideFlags: 0
@@ -29976,9 +29991,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f37491c532a3441c1b4dbb236b332596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shapeMaterial: {fileID: 0}
+  shapeMaterial: {fileID: 2100000, guid: 45582fe06ada54dc190411da5cb70ce0, type: 2}
   paintMaterial: {fileID: 0}
-  completedMaterial: {fileID: 0}
+  completedMaterial: {fileID: 2100000, guid: 6736c326805c14a32961ef3e3018158f, type: 2}
 --- !u!1001 &1756574401
 Prefab:
   m_ObjectHideFlags: 0
@@ -31623,9 +31638,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f37491c532a3441c1b4dbb236b332596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shapeMaterial: {fileID: 0}
+  shapeMaterial: {fileID: 2100000, guid: bf834332adb534a808e7428f699d3d1a, type: 2}
   paintMaterial: {fileID: 0}
-  completedMaterial: {fileID: 0}
+  completedMaterial: {fileID: 2100000, guid: 8cbc61774541649a4bfa5b2f1e990b3e, type: 2}
 --- !u!4 &1887373063 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4219831457173660, guid: eecbb4b779549422fbf0e2c87122b67c,
@@ -32574,9 +32589,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f37491c532a3441c1b4dbb236b332596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shapeMaterial: {fileID: 0}
+  shapeMaterial: {fileID: 2100000, guid: 1aa15832602cd4483b647c23c0d713a6, type: 2}
   paintMaterial: {fileID: 0}
-  completedMaterial: {fileID: 0}
+  completedMaterial: {fileID: 2100000, guid: 6bdf62648cc894568a90256c7d16a93c, type: 2}
 --- !u!1001 &1929524725
 Prefab:
   m_ObjectHideFlags: 0
@@ -33321,6 +33336,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelName: 
   levelTrack: 0
+  isScoreable: 0
+  initialBestScore: 2147483647
 --- !u!1001 &1992827255
 Prefab:
   m_ObjectHideFlags: 0
@@ -34200,6 +34217,11 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: 0.0000013240834
       objectReference: {fileID: 0}
+    - target: {fileID: 23648956046406570, guid: 0737e1de251194b01afc5a08a6d47310,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 45582fe06ada54dc190411da5cb70ce0, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0737e1de251194b01afc5a08a6d47310, type: 2}
   m_IsPrefabParent: 0

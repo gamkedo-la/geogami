@@ -84,10 +84,37 @@ public class OutlineVert : MonoBehaviour {
 
     public void startLevelComplete()
     {
-
-        StartCoroutine(outlineFade(0f, .5f)); // TODO remove Magic number
+        fadeOutlineToZeroAlpha();
     }
 
+
+    // -----------
+    // Fade / Set Alpha
+    // -----------
+
+    public void setOutlineToAlpha(float alphaFinal)
+    {
+
+        Color newColor = myLineCube.GetComponent<Renderer>().material.color;
+        newColor.a = alphaFinal;
+
+        myLineCube.GetComponent<Renderer>().material.SetColor("_Color", newColor);
+        mySphere.GetComponent<Renderer>().material.SetColor("_Color", newColor);
+    }
+
+ 
+
+    public void fadeOutlineToZeroAlpha()
+    {
+
+        StartCoroutine(outlineFade(0f, .5f)); // TODO remove Magic number, currently same as SHAPE's fade magic number
+    }
+
+    public void fadeOutlineToFullAlpha()
+    {
+
+        StartCoroutine(outlineFade(1f, .5f)); // TODO remove Magic number, currently same as SHAPE's fade magic number
+    }
 
     IEnumerator outlineFade(float alphaFinal, float aTime)
     {
@@ -104,6 +131,11 @@ public class OutlineVert : MonoBehaviour {
 
             yield return null;
         }
+
+        newColor.a = alphaFinal;
+
+        myLineCube.GetComponent<Renderer>().material.SetColor("_Color", newColor);
+        mySphere.GetComponent<Renderer>().material.SetColor("_Color", newColor);
         //Destroy(gameObject);  // Removed 2018-04-17 by Erik, unnecessary to destroy outline
     }
 }

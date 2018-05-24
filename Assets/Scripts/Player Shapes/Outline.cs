@@ -6,8 +6,8 @@ public class Outline : MonoBehaviour {
 
     public float zPlaneForOutline =-5f;
 
-    public float defaultLineThickness = 0.05f;
-    public float defaultSphereSize = 0.07f;
+    public float defaultLineThickness = 0.00f; // 0.05f;
+    public float defaultSphereSize = 0.00f; //0.07f;
     public float selectedLineThickness = 0.07f;
     public float selectedSphereSize = 0.09f;
 
@@ -128,13 +128,30 @@ public class Outline : MonoBehaviour {
     {
         foreach (Transform outlineVert in outlineList)
         {
+
             OutlineVert outlineVertScript = outlineVert.GetComponent<OutlineVert>();
 
-            // Line
-            outlineVertScript.setLineThickness(newLineThickness);
+            if(newLineThickness <= 0f || newSphereSize <= 0f)
+            {
+                // Set transparent
 
-            // Sphere
-            outlineVertScript.setSphereSize(newSphereSize);
+                outlineVertScript.setOutlineToAlpha(0f);
+            }
+            else
+            {
+                // Set to specific thickness
+
+                outlineVertScript.setOutlineToAlpha(1f);
+
+                // Line
+                outlineVertScript.setLineThickness(newLineThickness);
+
+                // Sphere
+                outlineVertScript.setSphereSize(newSphereSize);
+            }
+
+
+
         }
     }
 

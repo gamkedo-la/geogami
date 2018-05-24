@@ -578,5 +578,7 @@ public class Flippable : MonoBehaviour {
             }
         }
 
+
+        paintTrailScript.fadeToZeroAlpha(1f); // TODO remove Magic number, currently same as OUTLINE fade magic number
     }
 }

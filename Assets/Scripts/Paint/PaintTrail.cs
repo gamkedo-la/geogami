@@ -171,6 +171,10 @@ public class PaintTrail : MonoBehaviour
         paintMatScript.fadeToAlphaNoDestroy(1, duration);
     }
 
+    public void fadeToZeroAlpha(float duration)
+    {
+        paintMatScript.fadeToAlphaNoDestroy(0, duration);
+    }
 
 
 
