@@ -25,21 +25,7 @@ public class PaintTrail : MonoBehaviour
 
 
 
-    void Start()
-    {
-        if (gameObject.tag == "Player")
-        {
-            StartCoroutine(InstantiatePaintTrailAfterTime(0.01f));
-        }
-    }
 
-    IEnumerator InstantiatePaintTrailAfterTime(float time)
-    {
-        yield return new WaitForSeconds(time);
-
-        // First paint trail at start location
-        instantiatePaintTrail();
-    }
 
     public void initialize(GameObject paintTrackerGO, GameObject paintSurfaceGO, GameObject barrierTrackerGO, GameObject tokenTrackerGO, GameObject tokenSphereGO)
     {
@@ -56,6 +42,11 @@ public class PaintTrail : MonoBehaviour
         paintMatScript = gameObject.GetComponent(typeof(PaintMaterials)) as PaintMaterials;
 
     }
+
+
+
+
+
 
     // ---------------
     // Runtime
@@ -152,6 +143,46 @@ public class PaintTrail : MonoBehaviour
     {
         gameObject.tag = newTag;
     }
+
+
+    // ---------------
+    // Level Activate
+    // ---------------
+
+    public void instantiatePaintTrailAfterTimeMain(float time)
+    {
+        if (gameObject.tag == "Player")
+        {
+            StartCoroutine(InstantiatePaintTrailAfterTime(time));
+        }
+    }
+
+    IEnumerator InstantiatePaintTrailAfterTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        // First paint trail at start location
+        instantiatePaintTrail();
+    }
+
+
+    public void fadeToFullAlpha(float duration)
+    {
+        paintMatScript.fadeToAlphaNoDestroy(1, duration);
+    }
+
+
+
+
+    // ---------------
+    // Level Complete
+    // ---------------
+
+
+
+    // ---------------
+    // Depracated
+    // ---------------
 
     //void disableAllScripts()
     //{

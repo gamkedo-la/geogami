@@ -167,6 +167,16 @@ public class Shape : MonoBehaviour
     }
 
     // -----------
+    // Level activate
+    // -----------
+
+    public void levelActivate(float duration)
+    {
+        flippableScript.levelActivate(duration);
+    }
+
+
+    // -----------
     // Level completed
     // -----------
 

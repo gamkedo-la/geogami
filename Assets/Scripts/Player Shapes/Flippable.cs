@@ -552,6 +552,17 @@ public class Flippable : MonoBehaviour {
     }
 
     // -----------
+    // Level activate
+    // -----------
+
+    public void levelActivate(float duration)
+    {
+        paintTrailScript.instantiatePaintTrailAfterTimeMain(duration);
+
+        paintTrailScript.fadeToFullAlpha(duration);
+    }
+
+    // -----------
     // Level completed
     // -----------
 
