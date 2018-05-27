@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 
 public class EventManager : MonoBehaviour
@@ -41,6 +41,28 @@ public class EventManager : MonoBehaviour
 
  //       }
 	//}
+
+
+    // -----------
+    // UI Buttons / Music
+    // -----------
+
+    public void homeButtonClicked()
+    {
+
+        Debug.Log("homeButtonClicked");
+
+        // Switch to menu music
+        GameObject musicManager = GameObject.Find("Music Controller");
+
+        if (musicManager)
+        {
+            MusicController musicManagerScript = musicManager.GetComponent<MusicController>();
+            musicManagerScript.PlayMenuMusic();
+        }
+
+        SceneManager.LoadScene("Menu - Levels");
+    }
 
 	// -----------
 	// Level start

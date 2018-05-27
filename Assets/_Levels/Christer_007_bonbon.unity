@@ -927,6 +927,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 367152960}
   m_Mesh: {fileID: 4300000, guid: fdbb0c4ce0b974cbf8967d8d083faab8, type: 3}
+--- !u!114 &407036661 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114763163261080652, guid: 16cc206e2857044ada50e78833e51e6b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1756574401}
+  m_Script: {fileID: 11500000, guid: 423d726731ca644c2b93614dd4ae100b, type: 3}
 --- !u!4 &420155460 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4049835364477338, guid: 6901cce0885fe44328a7ed9da7e7551a,
@@ -2720,6 +2726,21 @@ Prefab:
     - target: {fileID: 4034802882635628, guid: 16cc206e2857044ada50e78833e51e6b, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114880724028199526, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 407036661}
+    - target: {fileID: 114880724028199526, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: homeButtonClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 114880724028199526, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 16cc206e2857044ada50e78833e51e6b, type: 2}
