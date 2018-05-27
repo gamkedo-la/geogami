@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ColorShape : MonoBehaviour {
+public class ColorShape : MonoBehaviour
+{
 
     Material shapeMaterial;
     Material paintMaterial;
@@ -29,7 +30,7 @@ public class ColorShape : MonoBehaviour {
             completedMaterial = colorOverrideScript.completedMaterial;
         }
 
-       
+
 
         foreach (Transform child in transform)
         {
@@ -42,7 +43,7 @@ public class ColorShape : MonoBehaviour {
     }
 
     public void initializeAll(GameObject paintTracker, GameObject paintSurface, GameObject barrierTracker, GameObject tokenTracker, GameObject tokenSphere)
-    { 
+    {
         foreach (Transform child in transform)
         {
             if (child.gameObject.tag == "Flippable")
@@ -52,6 +53,7 @@ public class ColorShape : MonoBehaviour {
             }
         }
     }
+
 
 
 }

@@ -56,7 +56,8 @@ public class PaintMaterials : MonoBehaviour
 
         if (gameObject.tag == "Player")
         {
-            setMaterial(shapeMaterial);
+            setMaterialAlpha(shapeMaterial, 0f);
+            Debug.Log("setMaterialAlpha complete");
         }
     }
 
@@ -92,6 +93,11 @@ public class PaintMaterials : MonoBehaviour
 
     public void lerpBetweenMaterials(Material mat1, Material mat2, float duration)
     {
+
+        Debug.Log("lerpBetweenMaterials");
+        Debug.Log("mat1 : " + mat1);
+        Debug.Log("mat2 : " + mat2);
+
         lerpingBetweenMaterials = true;
         lerpMaterialStart = mat1;
         lerpMaterialEnd = mat2;
@@ -126,6 +132,32 @@ public class PaintMaterials : MonoBehaviour
         Destroy(gameObject);
     }
 
+
+
+    public void fadeToAlphaNoDestroy(float alpha, float duration)
+    {
+
+        StartCoroutine(FadeToNoDestroy(alpha, duration));
+
+    }
+
+    IEnumerator FadeToNoDestroy(float alphaFinal, float aTime)
+    {
+        float alpha = GetComponent<Renderer>().material.color.a;
+        Color newColor = GetComponent<Renderer>().material.color;
+
+
+        for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / aTime)
+        {
+
+            newColor.a = Mathf.Lerp(alpha, alphaFinal, t);
+
+            GetComponent<Renderer>().material.SetColor("_Color", newColor);
+
+            yield return null;
+        }
+    }
+
     // ---------------
     // Helper Functions
     // ---------------
@@ -133,13 +165,19 @@ public class PaintMaterials : MonoBehaviour
     public void setMaterial(Material newMaterial)
     {
         GetComponent<Renderer>().material = newMaterial;
+
+        Debug.Log("setMaterial called");
     }
 
     public void setMaterialAlpha(Material newMaterial, float alpha)
     {
         GetComponent<Renderer>().material = newMaterial;
-        Color color = GetComponent<Renderer>().material.color;
-        color.a = alpha;
+
+        Color newColor = GetComponent<Renderer>().material.color;
+        newColor.a = alpha;
+        GetComponent<Renderer>().material.SetColor("_Color", newColor);
+
+        Debug.Log("setMaterialAlpha called");
     }
 
 

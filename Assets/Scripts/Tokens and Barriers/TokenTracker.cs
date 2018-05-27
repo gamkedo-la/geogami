@@ -12,6 +12,9 @@ public class TokenTracker : MonoBehaviour {
     public Transform paintTracker;
     private PaintTracker paintTrackerScript;
 
+    public Transform mainCamera;
+    private CameraMovement mainCameraMovementScript;
+
 
     void Awake()
     {
@@ -30,6 +33,7 @@ public class TokenTracker : MonoBehaviour {
     {
         shapeTrackerScript = shapeTracker.GetComponent<ShapeTracker>();
         paintTrackerScript = paintTracker.GetComponent<PaintTracker>();
+        mainCameraMovementScript = mainCamera.GetComponent<CameraMovement>();
     }
 
     // Update is called once per frame
@@ -38,6 +42,7 @@ public class TokenTracker : MonoBehaviour {
         if (transform.childCount < 1 && !levelComplete)
         {
             levelComplete = true;
+            GameObject.Find("Level Info").GetComponent<LevelInfo>().IsLevelComplete = true;
             startLevelComplete();
         }
     }
@@ -52,5 +57,6 @@ public class TokenTracker : MonoBehaviour {
         // Disable Player mechanics
         shapeTrackerScript.startLevelComplete();
         paintTrackerScript.startLevelComplete();
+        mainCameraMovementScript.startLevelComplete();
     }
 }

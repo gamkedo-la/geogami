@@ -1,9 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shape : MonoBehaviour {
-    
+public class Shape : MonoBehaviour
+{
+
 
     public GameObject flippable;
     public Flippable flippableScript; // Script of main child object, the primary fippable shape
@@ -49,7 +51,9 @@ public class Shape : MonoBehaviour {
                         // Move to new location
                         flippableScript.flip180DegAnimated(previousMousePos);
 
-
+                        // Update number of flips
+                        if (GameObject.Find("Score") != null)
+                            GameObject.Find("Score").GetComponent<ScoreManager>().CurrentScore++;
                     }
                     else
                     {
@@ -114,6 +118,9 @@ public class Shape : MonoBehaviour {
     }
 
 
+
+
+
     bool areThereGhosts()
     {
 
@@ -143,10 +150,30 @@ public class Shape : MonoBehaviour {
         }
 
     }
-	
 
 
+    // -----------
+    // Selection
+    // -----------
 
+    public void deselect()
+    {
+        flippableScript.deselect();
+    }
+
+    public void select()
+    {
+        flippableScript.select();
+    }
+
+    // -----------
+    // Level activate
+    // -----------
+
+    public void levelActivate(float duration)
+    {
+        flippableScript.levelActivate(duration);
+    }
 
 
     // -----------
@@ -155,6 +182,6 @@ public class Shape : MonoBehaviour {
 
     public void startLevelComplete()
     {
-        // TODO if needed
+        flippableScript.startLevelComplete();
     }
 }

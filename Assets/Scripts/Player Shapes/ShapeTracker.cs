@@ -18,7 +18,7 @@ public class ShapeTracker : MonoBehaviour
 
 
     bool playerSelectedThisFrame = false;
-    bool flippingEnabled = true;
+    bool flippingEnabled = false;
 
 
     // --------------------
@@ -43,6 +43,9 @@ public class ShapeTracker : MonoBehaviour
 
             // Initialize with tracker connections
             colorShapeScript.initializeAll(paintTracker, paintSurface, barrierTracker, tokenTracker, tokenSphere);
+
+            // Set to invisible to start
+
         }
 
 
@@ -83,6 +86,8 @@ public class ShapeTracker : MonoBehaviour
     }
   
 
+
+
     // -----------
     // Flipping
     // -----------
@@ -103,13 +108,14 @@ public class ShapeTracker : MonoBehaviour
 
             RaycastHit[] hits;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            hits = Physics.RaycastAll(ray, 100.0F);
+            hits = Physics.RaycastAll(ray, 90.0F);
 
             for (int i = 0; i < hits.Length; i++)
             {
                 RaycastHit hit = hits[i];
                 Transform objectHit = hit.transform;
 
+                Debug.Log("objectHit: " + objectHit);
 
                 if (objectHit.tag == "Player")
                 {
@@ -128,14 +134,67 @@ public class ShapeTracker : MonoBehaviour
 
     public void selectNewShape(GameObject newShape)
     {
-        currentSelectedShape = newShape;
-        currentSelectedShapeScript = currentSelectedShape.GetComponent<Shape>();
+        // Call deselect on old shape
+        if (currentSelectedShapeScript)
+        {
+            currentSelectedShapeScript.deselect();
+        }
 
-        //Debug.Log("-- selectNewShape --");
-        //Debug.Log("currentlySelectedShape: " + currentlySelectedShape);
-        //Debug.Log("selectedShapeScript: " + selectedShapeScript);
+
+
+        //if (currentSelectedShape == newShape)
+        //{
+        //    currentSelectedShape = null;
+        //    currentSelectedShapeScript = null;
+
+        //    Debug.Log("Same shape selected, deselected shape");
+        //}
+        //else
+        //{
+            currentSelectedShape = newShape;
+            currentSelectedShapeScript = currentSelectedShape.GetComponent<Shape>();
+
+            // Call select on new shape
+            currentSelectedShapeScript.select();
+
+            Debug.Log("Selected new shape");
+        //}
+
+
+
+
+
     }
 
+
+    // -----------
+    // Level Activate
+    // -----------
+
+    public void levelActivate(float duration)
+    {
+
+        StartCoroutine( setFlippingEnabledTrueAfterTime(duration) );
+
+        foreach (Transform child in transform)
+        {
+            if (child.gameObject.tag == "Shape")
+            {
+                Shape childScript = child.gameObject.GetComponent<Shape>();
+                childScript.levelActivate(duration);
+            }
+        }
+
+
+    }
+
+    IEnumerator setFlippingEnabledTrueAfterTime(float time)
+    {
+  
+        yield return new WaitForSeconds(time);
+        setFlippingEnabled(true);
+      
+    }
 
     // -----------
     // Level completed
