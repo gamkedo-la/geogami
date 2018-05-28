@@ -15493,9 +15493,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f37491c532a3441c1b4dbb236b332596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shapeMaterial: {fileID: 0}
+  shapeMaterial: {fileID: 2100000, guid: bf834332adb534a808e7428f699d3d1a, type: 2}
   paintMaterial: {fileID: 0}
-  completedMaterial: {fileID: 0}
+  completedMaterial: {fileID: 2100000, guid: 8cbc61774541649a4bfa5b2f1e990b3e, type: 2}
 --- !u!1001 &412389013
 Prefab:
   m_ObjectHideFlags: 0
@@ -27085,11 +27085,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4145167704924544, guid: 615aaadcda8bb4f41a6c83e6795be6b6, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.02
+      value: 0.025
       objectReference: {fileID: 0}
     - target: {fileID: 4145167704924544, guid: 615aaadcda8bb4f41a6c83e6795be6b6, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.85
+      value: -1.87
       objectReference: {fileID: 0}
     - target: {fileID: 4145167704924544, guid: 615aaadcda8bb4f41a6c83e6795be6b6, type: 2}
       propertyPath: m_LocalPosition.z
@@ -34304,7 +34304,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4431192132597660, guid: 4ce667d6e01db4031b10c83f6995c70a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 3.04
+      value: 3.038
       objectReference: {fileID: 0}
     - target: {fileID: 4431192132597660, guid: 4ce667d6e01db4031b10c83f6995c70a, type: 2}
       propertyPath: m_LocalPosition.y
@@ -51587,9 +51587,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f37491c532a3441c1b4dbb236b332596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shapeMaterial: {fileID: 0}
+  shapeMaterial: {fileID: 2100000, guid: 401b07f14b79202489473dea026f5d8f, type: 2}
   paintMaterial: {fileID: 0}
-  completedMaterial: {fileID: 0}
+  completedMaterial: {fileID: 2100000, guid: 9af4efae0a3c61e44bd2b3c522db697a, type: 2}
 --- !u!1001 &1397539410
 Prefab:
   m_ObjectHideFlags: 0
@@ -66889,9 +66889,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f37491c532a3441c1b4dbb236b332596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shapeMaterial: {fileID: 0}
+  shapeMaterial: {fileID: 2100000, guid: e109bad424fad480196aa1ade9633d15, type: 2}
   paintMaterial: {fileID: 0}
-  completedMaterial: {fileID: 0}
+  completedMaterial: {fileID: 2100000, guid: 3736b00a1015b4cb9bfafa2905e01d48, type: 2}
 --- !u!4 &1794640048 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4219831457173660, guid: eecbb4b779549422fbf0e2c87122b67c,
@@ -70045,7 +70045,7 @@ Transform:
   m_GameObject: {fileID: 1881308442}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 3.79, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.993, y: 0.993, z: 0.993}
   m_Children:
   - {fileID: 733919427}
   m_Father: {fileID: 1973704861}
@@ -70062,9 +70062,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f37491c532a3441c1b4dbb236b332596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shapeMaterial: {fileID: 0}
+  shapeMaterial: {fileID: 2100000, guid: 3eac7671f4db97246a6f6d4bc27c6e6a, type: 2}
   paintMaterial: {fileID: 0}
-  completedMaterial: {fileID: 0}
+  completedMaterial: {fileID: 2100000, guid: 86b475f0013001d40a7029096b7981a8, type: 2}
 --- !u!1001 &1881393436
 Prefab:
   m_ObjectHideFlags: 0
