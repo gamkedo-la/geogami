@@ -64,6 +64,16 @@ public class EventManager : MonoBehaviour
         SceneManager.LoadScene("Menu - Levels");
     }
 
+    public void resetLevelButtonClicked()
+    {
+
+        Debug.Log("resetButtonClicked");
+
+        // Reload level
+        Scene loadedLevel = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(loadedLevel.buildIndex);
+    }
+
 	// -----------
 	// Level start
 	// -----------
