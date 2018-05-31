@@ -73,6 +73,7 @@ public class EventManager : MonoBehaviour
         gameStatus = "Activated";
         shapeTrackerScript.levelActivate(activateFadeDuration);
 
+
     }
 
 	// -----------
