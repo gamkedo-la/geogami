@@ -180,7 +180,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4717656370297930, guid: 6222b3f75b7b041eb8c7091654ef5456, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1103588350442316, guid: 6222b3f75b7b041eb8c7091654ef5456, type: 2}
       propertyPath: m_Name
@@ -1314,8 +1314,8 @@ Transform:
   m_LocalPosition: {x: 0, y: -16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 751341244}
   - {fileID: 1340173336}
+  - {fileID: 751341244}
   - {fileID: 1124706296}
   - {fileID: 824516376}
   - {fileID: 1145519764}
@@ -2652,7 +2652,7 @@ Transform:
   m_Children:
   - {fileID: 1547163122}
   m_Father: {fileID: 657759751}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1340173337
 MonoBehaviour:
@@ -2668,6 +2668,12 @@ MonoBehaviour:
   baseScale: 0.2
   hoverScale: 0.22
   sceneToLoad: ErikV_001a_Build-A-Cube
+  hoverColor:
+    serializedVersion: 2
+    rgba: 4283909375
+  idleColor:
+    serializedVersion: 2
+    rgba: 4293287505
 --- !u!1 &1352253447
 GameObject:
   m_ObjectHideFlags: 0
@@ -3263,7 +3269,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1799555636635622, guid: ee0bd299e9773804487b3d70cdeb534b, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4086629312483028, guid: ee0bd299e9773804487b3d70cdeb534b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4086629312483028, guid: ee0bd299e9773804487b3d70cdeb534b, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ee0bd299e9773804487b3d70cdeb534b, type: 2}
@@ -3581,7 +3595,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 18.899994, y: -15}
+  m_AnchoredPosition: {x: 18.900024, y: -15}
   m_SizeDelta: {x: 62.200012, y: 59.799988}
   m_Pivot: {x: 0.000000052154064, y: 0.99999994}
 --- !u!114 &1852938109
