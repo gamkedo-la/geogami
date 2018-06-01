@@ -60,7 +60,7 @@ public class TokenTracker : MonoBehaviour {
 
         // 
         eventManagerScript.startLevelComplete();
-        //shapeTrackerScript.startLevelComplete();
+        //shapeTrackerScript.startLevelComplete(); // Depracated 2018-06-01
         paintTrackerScript.startLevelComplete();
         mainCameraMovementScript.startLevelComplete();
     }

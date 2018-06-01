@@ -2667,7 +2667,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseScale: 0.2
   hoverScale: 0.22
-  sceneToLoad: ErikV_001a_Build-A-Cube
+  sceneToLoad: ErikV_001b_Build-A-Square2
   hoverColor:
     serializedVersion: 2
     rgba: 4283909375
