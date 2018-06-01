@@ -10,25 +10,28 @@ public class LevelButton : MonoBehaviour {
     public float hoverScale = 0.25f;
     public string sceneToLoad;
 
-    //public Image myTriangle;
+    public Color32 hoverColor;
+    public Color32 idleColor;
+    private Image myTriangle;
 
-
-	void Start () {
+    void Start () {
         setScaleXY(baseScale);
 
+        myTriangle = this.gameObject.transform.GetChild(0).GetComponent<Image>(); // get the triangle image so we can change its color
         //myTriangle.alphaHitTestMinimumThreshold = 0.5f;
 	}
 
 	public void myOnMouseEnter()
 	{
         setScaleXY(hoverScale);
-
+        myTriangle.color = hoverColor;
         Debug.Log("myOnMouseEnter");
 	}
 
     public void myOnMouseExit()
     {
         setScaleXY(baseScale);
+        myTriangle.color = idleColor;
         Debug.Log("myOnMouseExit");
     }
 

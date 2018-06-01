@@ -18,5 +18,8 @@ EditorBuildSettings:
     path: Assets/_Scenes/Menu - Credits.unity
     guid: a351ee3ae3e224927ba9f8996ff28bdb
   - enabled: 1
-    path: Assets/_Levels/ErikV_001a_Build-A-Cube.unity
-    guid: b438a908b59854d128171a59b7a64ae5
+    path: Assets/_Levels/ErikV_001b_Build-A-Square2.unity
+    guid: cb00e0d82624e4b60a2b867a1bc342c3
+  - enabled: 1
+    path: Assets/_Levels/ErikV_001a_Build-A-Plus.unity
+    guid: 7042bed85fc1a4a6db0e8cabf19f789a

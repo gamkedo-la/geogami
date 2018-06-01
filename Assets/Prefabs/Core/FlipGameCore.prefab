@@ -867,6 +867,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shapeTracker: {fileID: 4216013859810368}
+  eventManager: {fileID: 4117942809751130}
   paintTracker: {fileID: 4278687314746302}
   mainCamera: {fileID: 4223763375360010}
 --- !u!114 &114660983451016474
@@ -954,6 +955,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activateFadeDuration: 1
+  levelEndTime: 6
   gameStatus: 
   shapeTracker: {fileID: 1601989611860126}
 --- !u!114 &114769137068195310

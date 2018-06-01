@@ -9,6 +9,7 @@ public class EventManager : MonoBehaviour
 
 
     public float activateFadeDuration = 1f;
+    public float levelEndTime = 6f;
 
     public string gameStatus;
 
@@ -93,6 +94,26 @@ public class EventManager : MonoBehaviour
 	public void startLevelComplete()
     {
         gameStatus = "EndScene";
+        shapeTrackerScript.startLevelComplete();
+        StartCoroutine("endLevelComplete");
+    }
+
+    IEnumerator endLevelComplete()
+    {
+        // Get total number of scenes in build
+       
+        yield return new WaitForSeconds(levelEndTime);
+       
+
+        if(SceneManager.GetActiveScene().buildIndex + 1 < SceneManager.sceneCountInBuildSettings)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+        else
+        {
+            homeButtonClicked();
+        }
+       
     }
 
 }

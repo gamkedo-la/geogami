@@ -9,6 +9,9 @@ public class TokenTracker : MonoBehaviour {
     public Transform shapeTracker;
     private ShapeTracker shapeTrackerScript;
 
+    public Transform eventManager;
+    private EventManager eventManagerScript;
+
     public Transform paintTracker;
     private PaintTracker paintTrackerScript;
 
@@ -34,6 +37,7 @@ public class TokenTracker : MonoBehaviour {
         shapeTrackerScript = shapeTracker.GetComponent<ShapeTracker>();
         paintTrackerScript = paintTracker.GetComponent<PaintTracker>();
         mainCameraMovementScript = mainCamera.GetComponent<CameraMovement>();
+        eventManagerScript = eventManager.GetComponent<EventManager>();
     }
 
     // Update is called once per frame
@@ -54,8 +58,9 @@ public class TokenTracker : MonoBehaviour {
 
         Debug.Log("Level Completed");
 
-        // Disable Player mechanics
-        shapeTrackerScript.startLevelComplete();
+        // 
+        eventManagerScript.startLevelComplete();
+        //shapeTrackerScript.startLevelComplete();
         paintTrackerScript.startLevelComplete();
         mainCameraMovementScript.startLevelComplete();
     }
