@@ -26,6 +26,14 @@ public class Flippable : MonoBehaviour {
     public ColorFlippable colorFlippableScript;
     public PaintTrail paintTrailScript;
 
+
+
+    // SFX
+    public GameObject sfxControllerGO;
+    sfxController sfxControllerScript;
+
+
+
     // ----------------------------
     // Initialization
     // ----------------------------
@@ -36,6 +44,15 @@ public class Flippable : MonoBehaviour {
 
         paintTrailScript = transform.Find("PlayerMesh").gameObject.GetComponent(typeof(PaintTrail)) as PaintTrail;
         colorFlippableScript = gameObject.GetComponent<ColorFlippable>();
+
+
+
+        // SFX
+        sfxControllerGO = GameObject.Find("SFX Controller");
+        if (sfxControllerGO)
+        {
+            sfxControllerScript = sfxControllerGO.GetComponent<sfxController>();
+        }
     }
 
     public void initializeFlippableShape()
@@ -104,6 +121,12 @@ public class Flippable : MonoBehaviour {
         Vector3 direction = getSwipeDirectionUsingClickPos(mouseClickPos);
         prepareToRotateTowards(direction);
         rotating = true;
+
+        // Play sound effect
+        if (sfxControllerScript)
+        {
+            sfxControllerScript.Play_SFX_Flip();
+        }
     }
 
     public void flip180DegImmediately(Vector3 mouseClickPos)
@@ -472,7 +495,11 @@ public class Flippable : MonoBehaviour {
 
     public void barrierHitGhost()
     {
-        
+        // Play sound effect
+        if (sfxControllerScript)
+        {
+            sfxControllerScript.Play_SFX_IllegalMove();
+        }
 
         enableMeshRenderer();
         createShadow();

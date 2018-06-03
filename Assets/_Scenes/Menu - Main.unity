@@ -203,6 +203,7 @@ MonoBehaviour:
   baseScale: 1
   hoverScale: 1.25
   sceneToLoad: Menu - Levels
+  sfxControllerGO: {fileID: 0}
 --- !u!114 &198100000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -437,6 +438,7 @@ MonoBehaviour:
   baseScale: 1
   hoverScale: 1.25
   sceneToLoad: Menu - Options
+  sfxControllerGO: {fileID: 0}
 --- !u!114 &600123130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -591,6 +593,7 @@ MonoBehaviour:
   baseScale: 1
   hoverScale: 1.25
   sceneToLoad: Menu - Credits
+  sfxControllerGO: {fileID: 0}
 --- !u!114 &1027378440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -716,6 +719,137 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1210752389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1062914037459384, guid: 16cc206e2857044ada50e78833e51e6b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1210752392}
+  - component: {fileID: 1210752391}
+  - component: {fileID: 1210752390}
+  m_Layer: 0
+  m_Name: SFX Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1210752390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114131767885313164, guid: 16cc206e2857044ada50e78833e51e6b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1210752389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b313afda4e5ae4d5c9bb1a8b55036297, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfx_Flip: {fileID: 8300000, guid: 5202ce9e278dc409cae727373226dbc7, type: 3}
+  sfx_SelectShape: {fileID: 8300000, guid: f4d20239ef2844e4eb1d5451508d431a, type: 3}
+  sfx_IllegalMove: {fileID: 8300000, guid: 85f61f133521d4cd3b6db6f9351a7125, type: 3}
+  sfx_LevelComplete: {fileID: 8300000, guid: f5ee574aae2db401fb9a924836b76c8c, type: 3}
+  sfx_UI_Back: {fileID: 8300000, guid: 04b6ebf1d54a549f084f914fde36226e, type: 3}
+  sfx_UI_Select: {fileID: 8300000, guid: 04b6ebf1d54a549f084f914fde36226e, type: 3}
+--- !u!82 &1210752391
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 82266305054348274, guid: 16cc206e2857044ada50e78833e51e6b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1210752389}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!4 &1210752392
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4304149797093874, guid: 16cc206e2857044ada50e78833e51e6b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1210752389}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1279109183
 Prefab:

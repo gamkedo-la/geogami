@@ -16,6 +16,9 @@ public class ShapeTracker : MonoBehaviour
     public GameObject currentSelectedShape;
     Shape currentSelectedShapeScript;
 
+    public GameObject sfxControllerGO;
+    sfxController sfxControllerScript;
+
 
     bool playerSelectedThisFrame = false;
     bool flippingEnabled = false;
@@ -63,6 +66,16 @@ public class ShapeTracker : MonoBehaviour
             // Make first child selected shape?
         }
 
+    }
+
+    void Start()
+    {
+        // SFX
+        sfxControllerGO = GameObject.Find("SFX Controller");
+        if (sfxControllerGO)
+        {
+            sfxControllerScript = sfxControllerGO.GetComponent<sfxController>();
+        }
     }
 
     void Update()
@@ -161,6 +174,11 @@ public class ShapeTracker : MonoBehaviour
         //}
 
 
+        // Play sound effect
+        if (sfxControllerScript)
+        {
+            sfxControllerScript.Play_SFX_SelectShape();
+        }
 
 
 

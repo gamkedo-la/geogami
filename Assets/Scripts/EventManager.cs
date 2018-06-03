@@ -17,10 +17,21 @@ public class EventManager : MonoBehaviour
     public GameObject shapeTracker;
     ShapeTracker shapeTrackerScript;
 
+    public GameObject sfxControllerGO;
+    sfxController sfxControllerScript;
+
 	void Start()
 	{
         gameStatus = "StartScene";
         shapeTrackerScript = shapeTracker.GetComponent<ShapeTracker>();
+
+        // SFX
+        sfxControllerGO = GameObject.Find("SFX Controller");
+        if(sfxControllerGO)
+        {
+            sfxControllerScript = sfxControllerGO.GetComponent<sfxController>();
+        }
+
 	}
 
 	// --------------------
@@ -53,6 +64,13 @@ public class EventManager : MonoBehaviour
 
         Debug.Log("homeButtonClicked");
 
+
+        // Play sound effect
+        if (sfxControllerScript)
+        {
+            sfxControllerScript.Play_SFX_UI_Back();
+        }
+
         // Switch to menu music
         GameObject musicManager = GameObject.Find("Music Controller");
 
@@ -69,6 +87,12 @@ public class EventManager : MonoBehaviour
     {
 
         Debug.Log("resetButtonClicked");
+
+        // Play sound effect
+        if (sfxControllerScript)
+        {
+            sfxControllerScript.Play_SFX_UI_Select();
+        }
 
         // Reload level
         Scene loadedLevel = SceneManager.GetActiveScene();
@@ -94,7 +118,13 @@ public class EventManager : MonoBehaviour
 	public void startLevelComplete()
     {
         gameStatus = "EndScene";
+
         shapeTrackerScript.startLevelComplete();
+        if(sfxControllerScript)
+        {
+            sfxControllerScript.Play_SFX_LevelComplete();
+        }
+
         StartCoroutine("endLevelComplete");
     }
 

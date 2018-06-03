@@ -14,12 +14,24 @@ public class MenuButton : MonoBehaviour {
 
     //public Image myTriangle;
 
+    //SFX
+    public GameObject sfxControllerGO;
+    sfxController sfxControllerScript;
+
 
     void Start()
     {
         setScaleXY(baseScale);
 
         //myTriangle.alphaHitTestMinimumThreshold = 0.5f;
+
+
+        // SFX
+        sfxControllerGO = GameObject.Find("SFX Controller");
+        if (sfxControllerGO)
+        {
+            sfxControllerScript = sfxControllerGO.GetComponent<sfxController>();
+        }
     }
 
     public void myOnMouseEnter()
@@ -38,6 +50,12 @@ public class MenuButton : MonoBehaviour {
     public void myOnMouseClick()
     {
         SceneManager.LoadScene(sceneToLoad);
+
+        // Play sound effect
+        if (sfxControllerScript)
+        {
+            sfxControllerScript.Play_SFX_UI_Select();
+        }
     }
 
 

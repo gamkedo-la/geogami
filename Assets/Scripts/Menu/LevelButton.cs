@@ -14,11 +14,23 @@ public class LevelButton : MonoBehaviour {
     public Color32 idleColor;
     private Image myTriangle;
 
+    //SFX
+    public GameObject sfxControllerGO;
+    sfxController sfxControllerScript;
+
     void Start () {
         setScaleXY(baseScale);
 
         myTriangle = this.gameObject.transform.GetChild(0).GetComponent<Image>(); // get the triangle image so we can change its color
         //myTriangle.alphaHitTestMinimumThreshold = 0.5f;
+
+
+        // SFX
+        sfxControllerGO = GameObject.Find("SFX Controller");
+        if (sfxControllerGO)
+        {
+            sfxControllerScript = sfxControllerGO.GetComponent<sfxController>();
+        }
 	}
 
 	public void myOnMouseEnter()
@@ -39,6 +51,12 @@ public class LevelButton : MonoBehaviour {
     public void myOnMouseClick()
     {
         SceneManager.LoadScene(sceneToLoad);
+
+        // Play sound effect
+        if (sfxControllerScript)
+        {
+            sfxControllerScript.Play_SFX_UI_Select();
+        }
     }
 
 

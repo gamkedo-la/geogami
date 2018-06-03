@@ -1021,6 +1021,7 @@ MonoBehaviour:
   levelEndTime: 6
   gameStatus: 
   shapeTracker: {fileID: 1601989611860126}
+  sfxControllerGO: {fileID: 0}
 --- !u!114 &114769137068195310
 MonoBehaviour:
   m_ObjectHideFlags: 1
