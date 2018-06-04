@@ -79,7 +79,7 @@ public class ShapeTracker : MonoBehaviour
             // If only one shape, auto-select
             GameObject[] levelShapes = GameObject.FindGameObjectsWithTag("Shape");
 
-            if (levelShapes.Length == 1)
+            if (levelShapes.Length > 0)
             {
                 selectNewShape(levelShapes[0]);
             }
