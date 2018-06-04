@@ -11,6 +11,7 @@ public class Shape : MonoBehaviour
     public Flippable flippableScript; // Script of main child object, the primary fippable shape
     public ColorFlippable colorFlippableScript; // Script of main flippable shape to make paint trail
     Vector3 previousMousePos;
+    Vector3 previousSwipeDirection = Vector3.zero;
 
     // GHOST PLAYER
     bool ghosting = false; // True during one frame where ghost has been sent out in direction of click/swipe in order to verify valid path.
@@ -49,7 +50,16 @@ public class Shape : MonoBehaviour
                         // VALID TO FLIP PLAYER
 
                         // Move to new location
-                        flippableScript.flip180DegAnimated(previousMousePos);
+                        if(previousSwipeDirection != Vector3.zero)
+                        {
+                            flippableScript.flip180DegAnimatedKeyboard(previousSwipeDirection);
+                            previousSwipeDirection = Vector3.zero;
+                        }
+                        else
+                        {
+                            flippableScript.flip180DegAnimated(previousMousePos);
+                        }
+
 
                         // Update number of flips
                         if (GameObject.Find("Score") != null)
@@ -85,6 +95,69 @@ public class Shape : MonoBehaviour
 
                 // Save click and wait an update frame before flipping shape
                 previousMousePos = mousePos;
+            } 
+            else if (Input.anyKeyDown)
+            {
+
+                Debug.Log("ANY KEY DOWN");
+
+                Vector3 swipeDirection = Vector3.zero;
+                bool validKey = false;
+
+                // Get direction
+                if(Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
+                {
+                    swipeDirection = new Vector3(0.01f, 1f, 0f);
+                    validKey = true;
+                } 
+                else if(Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+                {
+                    swipeDirection = new Vector3(1f, -0.01f, 0f);
+                    validKey = true;
+                } 
+                else if(Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+                {
+                    swipeDirection = new Vector3(-1f, 0.01f, 0f);
+                    validKey = true;
+                } 
+                else if(Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.X))
+                {
+                    swipeDirection = new Vector3(-0.01f, -1f, 0f);
+                    validKey = true;
+                } 
+                else if(Input.GetKeyDown(KeyCode.Q))
+                {
+                    swipeDirection = new Vector3(-1f, 1f, 0f);
+                    validKey = true;
+                } 
+                else if(Input.GetKeyDown(KeyCode.E))
+                {
+                    swipeDirection = new Vector3(1f, 1f, 0f);
+                    validKey = true;
+                } 
+                else if(Input.GetKeyDown(KeyCode.C))
+                {
+                    swipeDirection = new Vector3(1f, -1f, 0f);
+                    validKey = true;
+                } 
+                else if(Input.GetKeyDown(KeyCode.Z))
+                {
+                    swipeDirection = new Vector3(-1f, -1f, 0f);
+                    validKey = true;
+                } 
+
+
+                if(validKey)
+                {
+                    // Send ghost of player ahead to check if flip is valid
+                    createAndFlipGhostKeyboard(swipeDirection);
+                    ghosting = true;
+                    ghostTimer = 0;
+
+                    // Save click and wait an update frame before flipping shape
+                    previousSwipeDirection = swipeDirection;
+                }
+
             }
         }
 
@@ -117,6 +190,26 @@ public class Shape : MonoBehaviour
 
     }
 
+
+    public void createAndFlipGhostKeyboard(Vector3 direction)
+    {
+        // Create ghost of player in same location, with this as parent
+        GameObject ghost = Instantiate(flippable, transform);
+        // Initialize
+        Flippable ghostFlippableScript = ghost.GetComponent<Flippable>();
+        ghostFlippableScript.initializeFlippableShape();
+        // Make FlippableShape into Ghost
+        ghostFlippableScript.makeIntoGhost();
+        // Disable ghost mesh
+        ghostFlippableScript.disableMeshRenderer();
+
+
+
+
+        // Flip ghost towards click to check for collisions. Should be destroyed if it hits barrier object.
+        ghostFlippableScript.flip180DegGhostKeyboard(direction);
+
+    }
 
 
 

@@ -129,6 +129,18 @@ public class Flippable : MonoBehaviour {
         }
     }
 
+    public void flip180DegAnimatedKeyboard(Vector3 direction)
+    {
+        prepareToRotateTowards(direction);
+        rotating = true;
+
+        // Play sound effect
+        if (sfxControllerScript)
+        {
+            sfxControllerScript.Play_SFX_Flip();
+        }
+    }
+
     public void flip180DegImmediately(Vector3 mouseClickPos)
     {
         Vector3 direction = getSwipeDirectionUsingClickPos(mouseClickPos);
@@ -141,6 +153,14 @@ public class Flippable : MonoBehaviour {
     public void flip180DegGhost(Vector3 mouseClickPos)
     {
         Vector3 direction = getSwipeDirectionUsingClickPos(mouseClickPos);
+        prepareToRotateTowards(direction);
+        transform.RotateAround(rotationPoint, rotationLine, rotationSign * 180);
+
+        setZToZero(); // Precaution against drift in z-axis
+    }
+
+    public void flip180DegGhostKeyboard(Vector3 direction)
+    {
         prepareToRotateTowards(direction);
         transform.RotateAround(rotationPoint, rotationLine, rotationSign * 180);
 
