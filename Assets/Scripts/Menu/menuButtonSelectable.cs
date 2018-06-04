@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class menuButtonSelectable : MonoBehaviour {
 
@@ -13,10 +14,15 @@ public class menuButtonSelectable : MonoBehaviour {
 	//       baseScale = parentLevelButtonScript.baseScale;
 	//       hoverScale = parentLevelButtonScript.hoverScale;
 	//}
+	public Image menuButtonImage;
 
 	void Start()
 	{
-        
+		if (!menuButtonImage)
+		{
+			menuButtonImage = GetComponent<Image>();
+		}
+		menuButtonImage.alphaHitTestMinimumThreshold = 1;
 	}
 
 
