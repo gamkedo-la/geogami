@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,7 +10,7 @@ public class LevelButton : MonoBehaviour {
     public float baseScale = 0.2f;
     public float hoverScale = 0.25f;
     public string sceneToLoad;
-
+    
     public Color32 hoverColor;
     public Color32 idleColor;
     private Image myTriangle;
@@ -17,11 +18,18 @@ public class LevelButton : MonoBehaviour {
     //SFX
     public GameObject sfxControllerGO;
     sfxController sfxControllerScript;
+    private int levelStartIndex = 3;
 
     void Start () {
+        
+        if (sceneToLoad.Length == 0)
+        {
+            sceneToLoad = findLevelName();
+        }
+        
         setScaleXY(baseScale);
 
-        myTriangle = this.gameObject.transform.GetChild(0).GetComponent<Image>(); // get the triangle image so we can change its color
+        myTriangle = gameObject.transform.GetChild(0).GetComponent<Image>(); // get the triangle image so we can change its color
         //myTriangle.alphaHitTestMinimumThreshold = 0.5f;
 
 
@@ -38,6 +46,7 @@ public class LevelButton : MonoBehaviour {
         setScaleXY(hoverScale);
         myTriangle.color = hoverColor;
         Debug.Log("myOnMouseEnter");
+        Debug.Log(gameObject.name);
 	}
 
     public void myOnMouseExit()
@@ -45,11 +54,13 @@ public class LevelButton : MonoBehaviour {
         setScaleXY(baseScale);
         myTriangle.color = idleColor;
         Debug.Log("myOnMouseExit");
+        Debug.Log(gameObject.name);
     }
 
 
     public void myOnMouseClick()
     {
+        
         SceneManager.LoadScene(sceneToLoad);
 
         // Play sound effect
@@ -67,5 +78,22 @@ public class LevelButton : MonoBehaviour {
         scaleTemp.y = newScale;
         transform.localScale = scaleTemp;
     }
+    
+    /// <summary>
+    /// Didn't want to type out all the string names of the levels so built this helper function
+    /// though I could use things from the Scenemanager class however they only work with loaded scens and not scenes
+    /// that sit in the buildsettings
+    /// </summary>
+    /// <returns></returns>
+    public string findLevelName()
+    {
+        //step down to find child text.
+        var menuText = GetComponentInChildren<Text>();
+        var buildIndex = Convert.ToInt32(menuText.text);
 
+       
+        //verify scene object or return null
+        return System.IO.Path.GetFileNameWithoutExtension( SceneUtility.GetScenePathByBuildIndex( buildIndex + levelStartIndex ) );
+        
+    }
 }
