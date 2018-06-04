@@ -53,18 +53,7 @@ public class ShapeTracker : MonoBehaviour
 
 
 
-        // Select first shape to flip (if a shape is pre-selected in editor)
-        if (currentSelectedShape)
-        {
-            // This allows first clicks to move shape, without having to select 
-            // Important for single-shape levels?
-            selectNewShape(currentSelectedShape);
-        } 
-        else 
-        {
-            // TODO 
-            // Make first child selected shape?
-        }
+
 
     }
 
@@ -75,6 +64,25 @@ public class ShapeTracker : MonoBehaviour
         if (sfxControllerGO)
         {
             sfxControllerScript = sfxControllerGO.GetComponent<sfxController>();
+        }
+
+
+        // Select first shape to flip (if a shape is pre-selected in editor)
+        if (currentSelectedShape)
+        {
+            // This allows first clicks to move shape, without having to select 
+            // Important for single-shape levels?
+            selectNewShape(currentSelectedShape);
+        }
+        else
+        {
+            // If only one shape, auto-select
+            GameObject[] levelShapes = GameObject.FindGameObjectsWithTag("Shape");
+
+            if (levelShapes.Length == 1)
+            {
+                selectNewShape(levelShapes[0]);
+            }
         }
     }
 
