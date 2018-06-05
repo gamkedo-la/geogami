@@ -7300,7 +7300,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelName: 
   levelTrack: 0
-  isScoreable: 0
   initialBestScore: 2147483647
 --- !u!1001 &1992723835
 Prefab:
