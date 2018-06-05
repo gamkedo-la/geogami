@@ -17,7 +17,7 @@ public class Outline : MonoBehaviour {
     bool selected;
     bool active;
 
-
+    private bool objectReady;
     public GameObject verticesGO;
     Vertices verticesScript;
 
@@ -45,6 +45,8 @@ public class Outline : MonoBehaviour {
 
         // Set everything to default
         deselect();
+
+	    objectReady = true;
 
 	}
 
@@ -126,7 +128,10 @@ public class Outline : MonoBehaviour {
 
     public void setLineAndSphere(float newLineThickness, float newSphereSize)
     {
-        
+        if (!objectReady)
+        {
+            return;
+        }
         foreach (var outlineVert in outlineList)
         {
 

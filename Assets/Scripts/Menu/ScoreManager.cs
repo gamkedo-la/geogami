@@ -13,7 +13,10 @@ public class ScoreManager : MonoBehaviour
     private GameObject levelInfo;
     private int bestScore = int.MaxValue;
     private string bestScoreKey;
-    private bool saved;
+    private bool showScore;
+
+    [SerializeField] private Text levelName;
+    [SerializeField] private Text levelTrack;
 
     void Start()
     {
@@ -29,9 +32,21 @@ public class ScoreManager : MonoBehaviour
             return;
         }
 
+        if (levelName == null)
+        {
+            levelName = GameObject.Find("Lvl Name").GetComponent<Text>();    
+        }
+
+        if (levelTrack == null)
+        {
+            levelTrack = GameObject.Find("Lvl Track").GetComponent<Text>();    
+        }
+        
+
         CurrentScore = 0;
         bestScore = levelInfoScript.loadScore();
-
+        levelName.text = levelInfoScript.LevelName;
+        levelTrack.text = levelInfoScript.LevelTrack.ToString();
         if (resetter != null)
             resetter.GetComponent<Button>().onClick.AddListener(ResetScore);
     }
@@ -49,11 +64,11 @@ public class ScoreManager : MonoBehaviour
             {
                 PlayerPrefs.SetInt(bestScoreKey, CurrentScore);
                 bestScore = CurrentScore;
-                saved = true;
             }
+            showScore = true;
         }
         //stop the flickring by drawing the text once.
-        if (saved)
+        if (showScore)
         {
             UpdateDisplayText();   
         }
@@ -69,7 +84,7 @@ public class ScoreManager : MonoBehaviour
         const string sNumOfFlipsDescriptor = "Best: ";
         sNoOfFlips.GetComponent<Text>().text = sNumOfFlipsDescriptor +
             (bestScore == int.MaxValue ? "-" : bestScore.ToString());
-        saved = false;
+        showScore = false; //just prevents this from being called again.
     }
 
     void ResetScore()
@@ -77,7 +92,7 @@ public class ScoreManager : MonoBehaviour
         PlayerPrefs.DeleteKey(bestScoreKey);
         bestScore = int.MaxValue;
     }
-
+//was used on a old Canvas code.
 //    void OnGUI()
 //    {
 //        // Update UI text according to screen size

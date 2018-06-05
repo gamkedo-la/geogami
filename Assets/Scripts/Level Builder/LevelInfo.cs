@@ -6,13 +6,18 @@ using UnityEngine.SceneManagement;
 public class LevelInfo : MonoBehaviour
 {
 
-    public string levelName;
-    public int levelTrack;
+    
+    [SerializeField] private string levelName;
+    [SerializeField] private int levelTrack;
+    //note: I've only made these fields private to force unity to rebuild with the default value.
+    //this allowed me to set all levels to scorable as true with out loading all levels.
+    //rexposing to the inspector you will have to edit each scene levelinfo. (sad times)
     private bool isScoreable = true;
     public int initialBestScore = int.MaxValue;
 
     public bool IsLevelComplete { get; set; }
 
+    [SerializeField] private int buildIndexOffset = 3;
     // Use this for initialization
     void Start()
     {
@@ -28,15 +33,30 @@ public class LevelInfo : MonoBehaviour
 
     public int loadScore()
     {
-        var sceneName = SceneManager.GetActiveScene().name;
+        levelName = SceneManager.GetActiveScene().name;
+        levelTrack = SceneManager.GetActiveScene().buildIndex - buildIndexOffset;
         var bestScoreStr = "_bestScore";
-        var bestScoreKey = sceneName + bestScoreStr;
+        var bestScoreKey = levelName + bestScoreStr;
         
         return PlayerPrefs.HasKey(bestScoreKey) ? PlayerPrefs.GetInt(bestScoreKey) : int.MaxValue;
+    }
+
+    public string LevelName
+    {
+        get { return levelName; }
+        set { levelName = value; }
+    }
+
+    public int LevelTrack
+    {
+        get { return levelTrack; }
+        set { levelTrack = value; }
     }
 
     public bool IsScoreable
     {
         get { return isScoreable; }
     }
+    
+    
 }
