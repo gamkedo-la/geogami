@@ -13,16 +13,14 @@ public class ScoreManager : MonoBehaviour
     private GameObject levelInfo;
     private int bestScore = int.MaxValue;
     private string bestScoreKey;
+    private bool saved;
 
     void Start()
     {
-        string sceneName = SceneManager.GetActiveScene().name;
-        string bestScoreStr = "_bestScore";
-        bestScoreKey = sceneName + bestScoreStr;
-
-
+        
         levelInfo = GameObject.Find("Level Info");
-        if (!levelInfo.GetComponent<LevelInfo>().isScoreable)
+        var levelInfoScript = levelInfo.GetComponent<LevelInfo>();
+        if (!levelInfo.GetComponent<LevelInfo>().IsScoreable)
         {
             // Disable all score related objects
             noOfFlips.GetComponent<Text>().enabled = false;
@@ -32,18 +30,15 @@ public class ScoreManager : MonoBehaviour
         }
 
         CurrentScore = 0;
-        if (PlayerPrefs.HasKey(bestScoreKey)) // Load score
-            bestScore = PlayerPrefs.GetInt(bestScoreKey);
-        else
-            bestScore = levelInfo.GetComponent<LevelInfo>().initialBestScore;
+        bestScore = levelInfoScript.loadScore();
 
         if (resetter != null)
             resetter.GetComponent<Button>().onClick.AddListener(ResetScore);
     }
 
-    void Update()
+    void LateUpdate()
     {
-        if (!levelInfo.GetComponent<LevelInfo>().isScoreable)
+        if (!levelInfo.GetComponent<LevelInfo>().IsScoreable)
             return;
 
         if (levelInfo.GetComponent<LevelInfo>().IsLevelComplete)
@@ -54,9 +49,14 @@ public class ScoreManager : MonoBehaviour
             {
                 PlayerPrefs.SetInt(bestScoreKey, CurrentScore);
                 bestScore = CurrentScore;
+                saved = true;
             }
         }
-        UpdateDisplayText();
+        //stop the flickring by drawing the text once.
+        if (saved)
+        {
+            UpdateDisplayText();   
+        }
     }
 
     void UpdateDisplayText()
@@ -69,6 +69,7 @@ public class ScoreManager : MonoBehaviour
         const string sNumOfFlipsDescriptor = "Best: ";
         sNoOfFlips.GetComponent<Text>().text = sNumOfFlipsDescriptor +
             (bestScore == int.MaxValue ? "-" : bestScore.ToString());
+        saved = false;
     }
 
     void ResetScore()
@@ -77,19 +78,19 @@ public class ScoreManager : MonoBehaviour
         bestScore = int.MaxValue;
     }
 
-    void OnGUI()
-    {
-        // Update UI text according to screen size
-
-        GetComponent<RectTransform>().sizeDelta = new Vector2(Screen.width, Screen.height);
-
-        float resizeFactor = Screen.height;
-        Vector2 resizeVector = new Vector2(resizeFactor, resizeFactor / 5);
-
-        noOfFlips.GetComponent<RectTransform>().sizeDelta = resizeVector;
-        noOfFlips.GetComponent<Text>().fontSize = (int)resizeFactor / 10;
-
-        sNoOfFlips.GetComponent<RectTransform>().sizeDelta = resizeVector;
-        sNoOfFlips.GetComponent<Text>().fontSize = (int)resizeFactor / 10;
-    }
+//    void OnGUI()
+//    {
+//        // Update UI text according to screen size
+//
+//        GetComponent<RectTransform>().sizeDelta = new Vector2(Screen.width, Screen.height);
+//
+//        float resizeFactor = Screen.height;
+//        Vector2 resizeVector = new Vector2(resizeFactor, resizeFactor / 5);
+//
+//        //noOfFlips.GetComponent<RectTransform>().sizeDelta = resizeVector;
+//        noOfFlips.GetComponent<Text>().fontSize = (int)resizeFactor / 10;
+//
+//        //sNoOfFlips.GetComponent<RectTransform>().sizeDelta = resizeVector;
+//        sNoOfFlips.GetComponent<Text>().fontSize = (int)resizeFactor / 10;
+//    }
 }

@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MenuButton : MonoBehaviour {
-	
+public class MenuButton : MonoBehaviour
+{
 
+    
 
     public float baseScale = 1f;
     public float hoverScale = 1.25f;
@@ -17,7 +18,7 @@ public class MenuButton : MonoBehaviour {
     //SFX
     public GameObject sfxControllerGO;
     sfxController sfxControllerScript;
-
+    [SerializeField] private bool debugOn;
 
     void Start()
     {
@@ -37,13 +38,14 @@ public class MenuButton : MonoBehaviour {
     public void myOnMouseEnter()
     {
         setScaleXY(hoverScale);
-
+        if(debugOn)
         Debug.Log("myOnMouseEnter");
     }
 
     public void myOnMouseExit()
     {
         setScaleXY(baseScale);
+        if(debugOn)
         Debug.Log("myOnMouseExit");
     }
 

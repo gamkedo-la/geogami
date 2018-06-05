@@ -28,7 +28,7 @@ public class PaintMaterials : MonoBehaviour
     public float lerpDuration = 10.0f;
     private float lerpTime = 0f;
     private float lerp = 0f;
-
+    [SerializeField] private bool debugOn;
 
     // ---------------
     // Initialize
@@ -57,6 +57,7 @@ public class PaintMaterials : MonoBehaviour
         if (gameObject.tag == "Player")
         {
             setMaterialAlpha(shapeMaterial, 0f);
+            if(debugOn)
             Debug.Log("setMaterialAlpha complete");
         }
     }
@@ -165,7 +166,7 @@ public class PaintMaterials : MonoBehaviour
     public void setMaterial(Material newMaterial)
     {
         GetComponent<Renderer>().material = newMaterial;
-
+        if(debugOn)
         Debug.Log("setMaterial called");
     }
 
@@ -176,7 +177,7 @@ public class PaintMaterials : MonoBehaviour
         Color newColor = GetComponent<Renderer>().material.color;
         newColor.a = alpha;
         GetComponent<Renderer>().material.SetColor("_Color", newColor);
-
+        if(debugOn)
         Debug.Log("setMaterialAlpha called");
     }
 

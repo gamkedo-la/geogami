@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelButton : MonoBehaviour {
 
+    
     public float baseScale = 0.2f;
     public float hoverScale = 0.25f;
     public string sceneToLoad;
@@ -19,7 +20,7 @@ public class LevelButton : MonoBehaviour {
     public GameObject sfxControllerGO;
     sfxController sfxControllerScript;
     private int levelStartIndex = 3;
-
+    [SerializeField] private bool debugOn;
     void Start () {
         
         if (sceneToLoad.Length == 0)
@@ -45,16 +46,16 @@ public class LevelButton : MonoBehaviour {
 	{
         setScaleXY(hoverScale);
         myTriangle.color = hoverColor;
+	    if(debugOn)
         Debug.Log("myOnMouseEnter");
-        Debug.Log(gameObject.name);
 	}
 
     public void myOnMouseExit()
     {
         setScaleXY(baseScale);
         myTriangle.color = idleColor;
+        if(debugOn)
         Debug.Log("myOnMouseExit");
-        Debug.Log(gameObject.name);
     }
 
 

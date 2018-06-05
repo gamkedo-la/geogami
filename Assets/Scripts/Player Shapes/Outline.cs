@@ -126,7 +126,8 @@ public class Outline : MonoBehaviour {
 
     public void setLineAndSphere(float newLineThickness, float newSphereSize)
     {
-        foreach (Transform outlineVert in outlineList)
+        
+        foreach (var outlineVert in outlineList)
         {
 
             OutlineVert outlineVertScript = outlineVert.GetComponent<OutlineVert>();

@@ -19,8 +19,10 @@ public class EventManager : MonoBehaviour
 
     public GameObject sfxControllerGO;
     sfxController sfxControllerScript;
+    [SerializeField] private float revealSpeed = 20f;
+    [SerializeField] private GameObject endScreen;
 
-	void Start()
+    void Start()
 	{
         gameStatus = "StartScene";
         shapeTrackerScript = shapeTracker.GetComponent<ShapeTracker>();
@@ -32,6 +34,10 @@ public class EventManager : MonoBehaviour
             sfxControllerScript = sfxControllerGO.GetComponent<sfxController>();
         }
 
+	    if (endScreen == null)
+	    {
+	        findEndScree();
+	    }
 	}
 
 	// --------------------
@@ -125,7 +131,38 @@ public class EventManager : MonoBehaviour
             sfxControllerScript.Play_SFX_LevelComplete();
         }
 
+        StartCoroutine("displayLevelScore");
         StartCoroutine("endLevelComplete");
+    }
+
+    private void findEndScree()
+    {
+        //using resourcse find all incase it isn'e enabled.
+        var gos = Resources.FindObjectsOfTypeAll<GameObject>();
+        foreach (var go in gos)
+        {
+            if (go.name == "End Screen")
+            {
+                endScreen = go;
+                endScreen.SetActive(true);
+                endScreen.GetComponent<CanvasGroup>().alpha = 0;
+                break;
+            }    
+        }
+    }
+
+    IEnumerator displayLevelScore()
+    {
+       // Get total number of scenes in build
+        endScreen.SetActive(true);
+        var canvasGroup = endScreen.GetComponent<CanvasGroup>();
+        //lerp reveal the canvasGroup;
+        while (canvasGroup.alpha < 1)
+        {
+            canvasGroup.alpha = Mathf.Lerp(0, 1, revealSpeed * Time.deltaTime);
+            yield return null;    
+        }
+        
     }
 
     IEnumerator endLevelComplete()
