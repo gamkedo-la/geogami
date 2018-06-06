@@ -7298,8 +7298,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b8e4bb8f3858427eb60bb04c0ee5704, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: 
-  levelTrack: 0
   initialBestScore: 2147483647
   buildIndexOffset: 3
 --- !u!1001 &1992723835

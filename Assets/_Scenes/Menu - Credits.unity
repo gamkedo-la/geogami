@@ -278,7 +278,9 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Erik Verlage - Team Lead, \nVignesh - Music, Programming (editor popup),
     levels\nKlaim - Music\nPhil Nicholson - Levels\nChrister - Levels\nMisha - Sound
-    Effects\n"
+    Effects\nAshlee Muscroft - level selector implementation and programming(bug fix
+    on shape selector, level info),UI animation level name, level track, level instructions
+    and score count transitions\n"
 --- !u!222 &446497760
 CanvasRenderer:
   m_ObjectHideFlags: 0

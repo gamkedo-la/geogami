@@ -7,8 +7,8 @@ public class LevelInfo : MonoBehaviour
 {
 
     
-    [SerializeField] private string levelName;
-    [SerializeField] private int levelTrack;
+    private string levelName;
+    private int levelTrack;
     //note: I've only made these fields private to force unity to rebuild with the default value.
     //this allowed me to set all levels to scorable as true with out loading all levels.
     //rexposing to the inspector you will have to edit each scene levelinfo. (sad times)
