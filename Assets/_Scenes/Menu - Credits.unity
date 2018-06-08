@@ -276,11 +276,26 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Erik Verlage - Team Lead, \nVignesh - Music, Programming (editor popup),
-    levels\nKlaim - Music\nPhil Nicholson - Levels\nChrister - Levels\nMisha - Sound
-    Effects\nAshlee Muscroft - level selector implementation and programming(bug fix
-    on shape selector, level info),UI animation level name, level track, level instructions
-    and score count transitions\n"
+  m_Text: 'Erik Verlage - Team lead, programming (main code)
+
+    Vignesh - Music, programming (editor popup), levels XY
+
+    Klaim - Music
+
+    Phil Nicholson - LevelsXY
+
+    Christer - Menu effects, LevelsXY
+
+    Misha - Sound effects
+
+    Ashlee Muscroft - level selector implementation and programming (bug fix on shape
+    selector, level info), UI animation level name, level track, level instructions
+    and score count transitions
+
+
+    Playtesting: Christer, Mary Brady, Andy King,Trenton Pegeas
+
+'
 --- !u!222 &446497760
 CanvasRenderer:
   m_ObjectHideFlags: 0

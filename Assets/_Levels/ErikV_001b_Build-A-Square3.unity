@@ -923,7 +923,7 @@ Prefab:
     - target: {fileID: 224528678238811568, guid: 16cc206e2857044ada50e78833e51e6b,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -30
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224891281057023510, guid: 16cc206e2857044ada50e78833e51e6b,
         type: 2}
@@ -943,7 +943,27 @@ Prefab:
     - target: {fileID: 224891281057023510, guid: 16cc206e2857044ada50e78833e51e6b,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -70
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224556325076540672, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224556325076540672, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224556325076540672, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 348.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224556325076540672, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 16cc206e2857044ada50e78833e51e6b, type: 2}
@@ -6739,7 +6759,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Try to turn this box red!
+  m_Text: 'Paint the box!
+
+    Click to flip the red square'
 --- !u!222 &1714161285
 CanvasRenderer:
   m_ObjectHideFlags: 0
