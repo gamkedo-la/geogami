@@ -13,6 +13,9 @@ public class EventManager : MonoBehaviour
 
     public string gameStatus;
 
+    // Level start index
+    int levelStartIndex = 3; // Needs to be updated
+
 
     public GameObject shapeTracker;
     ShapeTracker shapeTrackerScript;
@@ -38,7 +41,7 @@ public class EventManager : MonoBehaviour
 	    {
 	        findEndScree();
 	    }
-	}
+	} 
 
 	// --------------------
 	// Main Game Loops
@@ -130,6 +133,9 @@ public class EventManager : MonoBehaviour
         {
             sfxControllerScript.Play_SFX_LevelComplete();
         }
+
+        // Record level reached
+        PlayerPrefs.SetInt("levelReached", SceneManager.GetActiveScene().buildIndex + 1 - levelStartIndex);
 
         StartCoroutine("displayLevelScore");
         StartCoroutine("endLevelComplete");

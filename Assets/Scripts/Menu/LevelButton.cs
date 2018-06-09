@@ -11,26 +11,33 @@ public class LevelButton : MonoBehaviour {
     public float baseScale = 0.2f;
     public float hoverScale = 0.25f;
     public string sceneToLoad;
+
+    public bool active = true;
     
     public Color32 hoverColor;
     public Color32 idleColor;
+    public Color32 lockedColor;
     private Image myTriangle;
+    private Image myLock;
+    private Text myNumberText;
 
     //SFX
     public GameObject sfxControllerGO;
     sfxController sfxControllerScript;
     private int levelStartIndex = 3;
     [SerializeField] private bool debugOn;
-    void Start () {
+    void Awake () {
         
         if (sceneToLoad.Length == 0)
         {
             sceneToLoad = findLevelName();
         }
-        
+
         setScaleXY(baseScale);
 
         myTriangle = gameObject.transform.GetChild(0).GetComponent<Image>(); // get the triangle image so we can change its color
+        myLock = gameObject.transform.GetChild(1).GetComponent<Image>(); // get the lock image 
+        myNumberText = gameObject.transform.GetChild(2).GetComponent<Text>(); // get the lock image 
         //myTriangle.alphaHitTestMinimumThreshold = 0.5f;
 
 
@@ -44,16 +51,24 @@ public class LevelButton : MonoBehaviour {
 
 	public void myOnMouseEnter()
 	{
-        setScaleXY(hoverScale);
-        myTriangle.color = hoverColor;
+        if(active)
+        {
+            setScaleXY(hoverScale);
+            myTriangle.color = hoverColor;
+        }
+
 	    if(debugOn)
         Debug.Log("myOnMouseEnter");
 	}
 
     public void myOnMouseExit()
     {
-        setScaleXY(baseScale);
-        myTriangle.color = idleColor;
+        if (active)
+        {
+            setScaleXY(baseScale);
+            myTriangle.color = idleColor;
+        }
+
         if(debugOn)
         Debug.Log("myOnMouseExit");
     }
@@ -61,13 +76,15 @@ public class LevelButton : MonoBehaviour {
 
     public void myOnMouseClick()
     {
-        
-        SceneManager.LoadScene(sceneToLoad);
-
-        // Play sound effect
-        if (sfxControllerScript)
+        if (active)
         {
-            sfxControllerScript.Play_SFX_UI_Select();
+            SceneManager.LoadScene(sceneToLoad);
+
+            // Play sound effect
+            if (sfxControllerScript)
+            {
+                sfxControllerScript.Play_SFX_UI_Select();
+            }
         }
     }
 
@@ -79,7 +96,38 @@ public class LevelButton : MonoBehaviour {
         scaleTemp.y = newScale;
         transform.localScale = scaleTemp;
     }
-    
+
+    public void setInteractable(bool interactable)
+    {
+        if (interactable)
+        {
+            active = true;
+            unlockLevel();
+        } 
+        else
+        {
+            active = false;
+            lockLevel();
+
+        }
+    }
+
+    public void lockLevel()
+    {
+        Debug.Log("lockLevel");
+        myTriangle.color = lockedColor;
+        myLock.enabled = true;
+        myNumberText.enabled = false;
+    }
+
+    public void unlockLevel()
+    {
+        Debug.Log("unlockLevel");
+        myTriangle.color = idleColor;
+        myLock.enabled = false;
+        myNumberText.enabled = true;
+    }
+
     /// <summary>
     /// Didn't want to type out all the string names of the levels so built this helper function
     /// though I could use things from the Scenemanager class however they only work with loaded scens and not scenes
