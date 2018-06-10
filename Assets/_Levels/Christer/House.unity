@@ -1131,6 +1131,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &103750718
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4559,6 +4560,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &704538659
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5935,6 +5937,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &949939061
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7070,6 +7073,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &1054480851
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10006,6 +10010,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &1457816583
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10246,6 +10251,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &1473142804
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11709,6 +11715,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &1621175195
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11989,7 +11996,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1657025165}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1973704861}
@@ -12975,6 +12982,46 @@ Prefab:
     - target: {fileID: 4034802882635628, guid: 16cc206e2857044ada50e78833e51e6b, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 224528678238811568, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224528678238811568, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224528678238811568, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 62.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224528678238811568, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 224891281057023510, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224891281057023510, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224891281057023510, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 387.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224891281057023510, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -70
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 16cc206e2857044ada50e78833e51e6b, type: 2}
@@ -14460,8 +14507,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b8e4bb8f3858427eb60bb04c0ee5704, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: 
-  levelTrack: 0
+  initialBestScore: 2147483647
+  buildIndexOffset: 3
 --- !u!1001 &1996093588
 Prefab:
   m_ObjectHideFlags: 0
@@ -15292,6 +15339,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &2084594883
 Rigidbody:
   m_ObjectHideFlags: 0
