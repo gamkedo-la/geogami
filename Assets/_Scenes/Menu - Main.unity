@@ -204,6 +204,7 @@ MonoBehaviour:
   hoverScale: 1.25
   sceneToLoad: Menu - Levels
   sfxControllerGO: {fileID: 0}
+  debugOn: 0
 --- !u!114 &198100000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -439,6 +440,7 @@ MonoBehaviour:
   hoverScale: 1.25
   sceneToLoad: Menu - Options
   sfxControllerGO: {fileID: 0}
+  debugOn: 0
 --- !u!114 &600123130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -594,6 +596,7 @@ MonoBehaviour:
   hoverScale: 1.25
   sceneToLoad: Menu - Credits
   sfxControllerGO: {fileID: 0}
+  debugOn: 0
 --- !u!114 &1027378440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -925,7 +928,6 @@ MonoBehaviour:
   backgroundMusic:
   - {fileID: 8300000, guid: 54a50f5222e70467392fc04c6c1838ee, type: 3}
   - {fileID: 8300000, guid: 3a49a2c4e7fc9d84398c3eb9370050b7, type: 3}
-  - {fileID: 8300000, guid: 8e324c9aef80a4ae3bf37e914044c75e, type: 3}
   - {fileID: 8300000, guid: 680eda8959af44f8891b8e7cf7b96caa, type: 3}
   - {fileID: 8300000, guid: b04a386a931114c1c856db53e015d0d6, type: 3}
 --- !u!82 &1300764252

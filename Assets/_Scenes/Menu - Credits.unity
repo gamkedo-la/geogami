@@ -182,7 +182,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Erik Verlage\nVignesh Ramesh\nKlaim (A. Jo\xEBl Lamotte)\nPhil Nicholson\nChrister
     \"McFunkypants\" Kaitila\n\nJaime Rivas\nMichael \"Misha\" Fewkes\nLuth Haroon\nAsix
-    Jin\nChris Deleon\nAshlee Muscroft\n\n\nPlaytesters\n"
+    Jin\nChris DeLeon\nAshlee Muscroft\n\n\nPlaytesters\n"
 --- !u!222 &50425409
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -380,7 +380,7 @@ MonoBehaviour:
     transitions
 
 
-    Christer, Mary Brady, Andy King, Trenton Pegeas
+    Christer "McFunkypants" Kaitila, Mary Brady, Andy King, Trenton Pegeas
 
 '
 --- !u!222 &446497760

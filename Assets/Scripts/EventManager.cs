@@ -182,7 +182,12 @@ public class EventManager : MonoBehaviour
         yield return new WaitForSeconds(levelEndTime);
        
 
-        if(SceneManager.GetActiveScene().buildIndex + 1 < SceneManager.sceneCountInBuildSettings)
+        if(SceneManager.GetActiveScene().name == "I Heart Shapes")
+        {
+            // Last level in series, return to main menu
+            homeButtonClicked();
+        }
+        else if(SceneManager.GetActiveScene().buildIndex + 1 < SceneManager.sceneCountInBuildSettings)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
