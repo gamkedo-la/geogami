@@ -18,86 +18,86 @@ EditorBuildSettings:
     path: Assets/_Scenes/Menu - Credits.unity
     guid: a351ee3ae3e224927ba9f8996ff28bdb
   - enabled: 1
-    path: Assets/_Levels/ErikV_001b_Build-A-Square3.unity
+    path: Assets/_Levels/ErikV/My First Window.unity
     guid: cb97021d4a37b4e49af7ba50b3bfc0a0
   - enabled: 1
-    path: Assets/_Levels/ErikV_001a_Build-A-Plus.unity
+    path: Assets/_Levels/ErikV/Red Cross.unity
     guid: 7042bed85fc1a4a6db0e8cabf19f789a
   - enabled: 1
-    path: Assets/_Levels/Christer_005.unity
+    path: Assets/_Levels/Christer/Big G.unity
     guid: 189a1050e87d458459acea9e37329d0f
   - enabled: 1
-    path: Assets/_Levels/ErikV_001d_doublePlus.unity
+    path: Assets/_Levels/ErikV/Adding Friends.unity
     guid: 854a907f193cb4bc8bf2df210e541d32
   - enabled: 1
-    path: Assets/_Levels/ErikV_001e_rectangle_pass.unity
+    path: Assets/_Levels/ErikV/Pass Along.unity
     guid: 0b4369b5d53684edb871f3ef47c945fc
   - enabled: 1
-    path: Assets/_Levels/ErikV_018_HalfDiamondInTheSky.unity
+    path: Assets/_Levels/ErikV/Half Diamond In The Sky.unity
     guid: 1f9afc5d4bcd5462e81bce0cb5f65011
   - enabled: 1
-    path: Assets/_Levels/ErikV_012_fox_head.unity
+    path: Assets/_Levels/ErikV/Foxed.unity
     guid: 2e7c18ed017e042808ffafdfc3a62a34
   - enabled: 1
-    path: Assets/_Levels/ErikV_001c_ninja star.unity
+    path: Assets/_Levels/ErikV/Ninja Star.unity
     guid: bf42626b5bdb644d2b0da18d0419299b
   - enabled: 1
-    path: Assets/_Levels/ErikV_014_horse.unity
+    path: Assets/_Levels/ErikV/Wild West.unity
     guid: 9033d4b7370c74355804d497a323e159
   - enabled: 1
-    path: Assets/_Levels/ErikV_021a_butterfly.unity
-    guid: 14b3ca2d9c29c48149d900efacdacad0
+    path: Assets/_Levels/ErikV/Patterned Wings.unity
+    guid: fa03e3c4382504fcaa135f24c1555c6b
   - enabled: 1
-    path: Assets/_Levels/ErikV_022_lobster.unity
+    path: Assets/_Levels/ErikV/Under the Sea.unity
     guid: 6641457fbb73e47cdad8295644d3ebc7
   - enabled: 1
-    path: Assets/_Levels/Luth_001_Vertebrae.unity
+    path: Assets/_Levels/Luth/Vertebrae.unity
     guid: ef2b52f5422e94da69d1b5402eb5cd3b
   - enabled: 1
-    path: Assets/_Levels/ErikV_016_camel.unity
+    path: Assets/_Levels/ErikV/Pyramids.unity
     guid: 0d7844454c2c3448d962128c375dec6e
   - enabled: 1
-    path: Assets/_Levels/ErikV_003a_Pinwheel.unity
+    path: Assets/_Levels/ErikV/Pinwheel.unity
     guid: af8239f1f05e645ec9aac3e1ff35c941
   - enabled: 1
-    path: Assets/_Levels/Christer_007_bonbon.unity
+    path: Assets/_Levels/Christer/Bonbon.unity
     guid: d510a755353eccb4b87058babcff9da3
   - enabled: 1
-    path: Assets/_Levels/ErikV_026_smallParalleleogramSquare.unity
+    path: Assets/_Levels/ErikV/Small Space.unity
     guid: 40b3590e9bdc54854a1d00766fcff157
   - enabled: 1
-    path: Assets/_Levels/ErikV_002_Octagonal.unity
+    path: Assets/_Levels/ErikV/Octagonal.unity
     guid: 3a8949279e2834958bbcb0638781dbe9
   - enabled: 1
-    path: Assets/_Levels/ErikV_008a_mushroom.unity
+    path: Assets/_Levels/ErikV/Mushroom.unity
     guid: a7aeb04b1378a4d6d8438dc0d5f16683
   - enabled: 1
-    path: Assets/_Levels/ErikV_011b_two-left-shoes 2.unity
+    path: Assets/_Levels/ErikV/Twins.unity
     guid: 7bad9d117ec734b899a62b3dd51d7843
   - enabled: 1
-    path: Assets/_Levels/ErikV_023_wonkyHex.unity
+    path: Assets/_Levels/ErikV/Wonky Hex.unity
     guid: 508abd7044f8e4d53a4becaf1a396ad7
   - enabled: 1
-    path: Assets/_Levels/ErikV_024_spinningTop.unity
+    path: Assets/_Levels/ErikV/Spinning Round.unity
     guid: dcc8cbd60ce674b6fa557d57d0da2713
   - enabled: 1
-    path: Assets/_Levels/ErikV_006_jumpfrog.unity
+    path: Assets/_Levels/ErikV/Jumpfrog.unity
     guid: 73a1b22eae87a48b9a486954f6e9ad0e
   - enabled: 1
-    path: Assets/_Levels/ErikV_025_bigTangramSquare.unity
+    path: Assets/_Levels/ErikV/Tangram Square.unity
     guid: 5f2c713544bc54924b91caea2fc89f85
   - enabled: 1
-    path: Assets/_Levels/Jaime_003_REDO.unity
+    path: Assets/_Levels/Jaime/Wobble.unity
     guid: 28f7a7da99bbc4fff82631952707708e
   - enabled: 1
-    path: Assets/_Levels/ErikV_027_diamondTangram1.unity
+    path: Assets/_Levels/ErikV/Tangram Diamond.unity
     guid: 0b586ffc31a4344378333d1f32869089
   - enabled: 1
-    path: Assets/_Levels/ErikV_009b_wide-boat.unity
+    path: Assets/_Levels/ErikV/Wide Boat.unity
     guid: 94a3db61a7617488ebe3a5d09a435d71
   - enabled: 1
-    path: Assets/_Levels/ErikV_007a_rabbit easy.unity
+    path: Assets/_Levels/ErikV/Rabbit.unity
     guid: 7103c37147e57493296452d75095df2c
   - enabled: 1
-    path: Assets/_Levels/ErikV_017_heart.unity
+    path: Assets/_Levels/ErikV/I Heart Shapes.unity
     guid: e6590e8b0320a407cbdeed1709ce988e
