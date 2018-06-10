@@ -11,7 +11,7 @@ public class ScoreManager : MonoBehaviour
     public int CurrentScore { get; set; } // Number of flips
 
     private GameObject levelInfo;
-    private int bestScore = int.MaxValue;
+    private int bestScore;
     private string bestScoreKey;
     private bool showScore;
 
@@ -58,9 +58,8 @@ public class ScoreManager : MonoBehaviour
 
         if (levelInfo.GetComponent<LevelInfo>().IsLevelComplete)
         {
-            bool beatScore = CurrentScore < bestScore;
-
-            if (beatScore) // Save score
+            var beatScore = CurrentScore < bestScore;
+            if (beatScore || !PlayerPrefs.HasKey(bestScoreKey)) // Save score
             {
                 PlayerPrefs.SetInt(bestScoreKey, CurrentScore);
                 bestScore = CurrentScore;
@@ -83,14 +82,14 @@ public class ScoreManager : MonoBehaviour
 
         const string sNumOfFlipsDescriptor = "Best: ";
         sNoOfFlips.GetComponent<Text>().text = sNumOfFlipsDescriptor +
-            (bestScore == int.MaxValue ? "-" : bestScore.ToString());
+            (bestScore == 0 ? "-" : bestScore.ToString());
         showScore = false; //just prevents this from being called again.
     }
 
     void ResetScore()
     {
         PlayerPrefs.DeleteKey(bestScoreKey);
-        bestScore = int.MaxValue;
+        bestScore = 0;
     }
 //was used on a old Canvas code.
 //    void OnGUI()
