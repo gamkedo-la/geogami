@@ -146,7 +146,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: -25, y: 0}
-  m_SizeDelta: {x: 150, y: 400}
+  m_SizeDelta: {x: 200, y: 400}
   m_Pivot: {x: 0.9999999, y: 1}
 --- !u!114 &50425408
 MonoBehaviour:
@@ -180,34 +180,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Erik Verlage
-
-    Vignesh
-
-    Klaim
-
-    Phil Nicholson
-
-    Christer
-
-
-    Jaime Rivas
-
-    Misha
-
-    Luth
-
-    Asix Jin
-
-    Chris Deleon
-
-    Ashlee Muscroft
-
-
-
-    Playtesters
-
-'
+  m_Text: "Erik Verlage\nVignesh Ramesh\nKlaim (A. Jo\xEBl Lamotte)\nPhil Nicholson\nChrister
+    \"McFunkypants\" Kaitila\n\nJaime Rivas\nMichael \"Misha\" Fewkes\nLuth Haroon\nAsix
+    Jin\nChris Deleon\nAshlee Muscroft\n\n\nPlaytesters\n"
 --- !u!222 &50425409
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -343,7 +318,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 92, y: -68}
+  m_AnchoredPosition: {x: 108, y: -68}
   m_SizeDelta: {x: 579.3, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &446497759
