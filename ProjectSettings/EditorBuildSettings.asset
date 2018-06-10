@@ -138,8 +138,5 @@ EditorBuildSettings:
     path: Assets/_Levels/ErikV/Magic Mushroom.unity
     guid: ef33c3d1d2bfc4c83b1060dd79022f15
   - enabled: 1
-    path: Assets/_Levels/ErikV/Mad Pixel.unity
-    guid: 68e75f796715f4410b5a21550bdb0718
-  - enabled: 1
     path: Assets/_Levels/ErikV/Evil Twins.unity
     guid: 7bad9d117ec734b899a62b3dd51d7843

@@ -1111,6 +1111,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &197591689
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1361,6 +1362,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!114 &208770252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2182,6 +2184,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!114 &285731858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3196,6 +3199,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!114 &404797803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4796,6 +4800,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!114 &633764084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5415,6 +5420,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &712561694
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5636,6 +5642,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!114 &725638089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8007,6 +8014,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!114 &1010647815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9622,6 +9630,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &1174701887
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10115,6 +10124,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &1197243564
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10353,6 +10363,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!114 &1207212716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11007,6 +11018,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &1297838345
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11482,6 +11494,46 @@ Prefab:
     - target: {fileID: 4034802882635628, guid: 16cc206e2857044ada50e78833e51e6b, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 224528678238811568, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224528678238811568, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224528678238811568, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 62.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224528678238811568, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 224891281057023510, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224891281057023510, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224891281057023510, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 387.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224891281057023510, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -70
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 16cc206e2857044ada50e78833e51e6b, type: 2}
@@ -13847,6 +13899,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!114 &1754950257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14010,6 +14063,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!114 &1758291052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15928,10 +15982,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b8e4bb8f3858427eb60bb04c0ee5704, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: 
-  levelTrack: 0
-  isScoreable: 0
   initialBestScore: 2147483647
+  buildIndexOffset: 3
 --- !u!4 &1997643706 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4219831457173660, guid: eecbb4b779549422fbf0e2c87122b67c,

@@ -960,6 +960,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &69855508
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2334,6 +2335,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &159153724
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2707,6 +2709,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &182583265
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4431,6 +4434,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &345333408
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5093,6 +5097,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &386209951
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5295,6 +5300,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &390403366
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6170,6 +6176,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &451299845
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6788,6 +6795,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &464739269
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7089,6 +7097,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &477114998
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7375,6 +7384,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &488376142
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7827,6 +7837,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &514410715
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8353,6 +8364,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &560109142
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9589,6 +9601,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &645081369
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9880,6 +9893,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &650557405
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10465,6 +10479,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &676784971
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12084,6 +12099,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &777810927
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13503,6 +13519,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &895831074
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14640,6 +14657,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &1004335259
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16788,6 +16806,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &1180932275
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17339,6 +17358,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &1202919631
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17504,6 +17524,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &1208454029
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17879,6 +17900,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &1217479908
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18128,6 +18150,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &1227295048
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19435,6 +19458,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &1300754855
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20953,6 +20977,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &1415061400
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21578,6 +21603,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &1465565542
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22358,6 +22384,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &1528678923
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22768,6 +22795,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &1551461908
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23158,6 +23186,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &1573416441
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23776,6 +23805,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &1637921513
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24439,6 +24469,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &1662488917
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24750,6 +24781,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &1685510772
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27151,6 +27183,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &1892087290
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28439,9 +28472,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b8e4bb8f3858427eb60bb04c0ee5704, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: 
-  levelTrack: 0
-  isScoreable: 0
+  initialBestScore: 2147483647
+  buildIndexOffset: 3
 --- !u!4 &1991117901 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4219831457173660, guid: 4942ebcd426274d99a63b13602f9664f,
@@ -28989,6 +29021,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &2023299985
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29698,6 +29731,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &2080115669
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30229,6 +30263,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!54 &2103594188
 Rigidbody:
   m_ObjectHideFlags: 0
