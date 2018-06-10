@@ -71,7 +71,6 @@ public class EventManager : MonoBehaviour
     public void homeButtonClicked()
     {
 
-        Debug.Log("homeButtonClicked");
 
 
         // Play sound effect
@@ -95,7 +94,7 @@ public class EventManager : MonoBehaviour
     public void resetLevelButtonClicked()
     {
 
-        Debug.Log("resetButtonClicked");
+       
 
         // Play sound effect
         if (sfxControllerScript)

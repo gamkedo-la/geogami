@@ -18,7 +18,7 @@ public class LevelSelector : MonoBehaviour {
 
             if(i + 1 > levelreached)
             {
-                Debug.Log("Level not active: " + i);
+                
                 level_buttons[i].setInteractable(false);
 
                 // Show Lock sprite

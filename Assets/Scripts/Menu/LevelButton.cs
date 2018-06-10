@@ -57,8 +57,8 @@ public class LevelButton : MonoBehaviour {
             myTriangle.color = hoverColor;
         }
 
-	    if(debugOn)
-        Debug.Log("myOnMouseEnter");
+	  
+
 	}
 
     public void myOnMouseExit()
@@ -69,8 +69,8 @@ public class LevelButton : MonoBehaviour {
             myTriangle.color = idleColor;
         }
 
-        if(debugOn)
-        Debug.Log("myOnMouseExit");
+     
+
     }
 
 
@@ -114,7 +114,7 @@ public class LevelButton : MonoBehaviour {
 
     public void lockLevel()
     {
-        Debug.Log("lockLevel");
+        
         myTriangle.color = lockedColor;
         myLock.enabled = true;
         myNumberText.enabled = false;
@@ -122,7 +122,7 @@ public class LevelButton : MonoBehaviour {
 
     public void unlockLevel()
     {
-        Debug.Log("unlockLevel");
+        
         myTriangle.color = idleColor;
         myLock.enabled = false;
         myNumberText.enabled = true;

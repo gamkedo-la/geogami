@@ -802,6 +802,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!114 &226617871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1351,6 +1352,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!114 &411397122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1859,6 +1861,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!114 &493296601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2966,6 +2969,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!114 &804672022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3406,6 +3410,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!114 &875589254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3815,6 +3820,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!114 &962344308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4156,6 +4162,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!114 &1077971784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4361,6 +4368,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!114 &1090255143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4561,6 +4569,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!114 &1109951113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5048,6 +5057,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!114 &1224942230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6466,6 +6476,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!114 &1564890247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6629,6 +6640,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!114 &1596810017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7277,6 +7289,121 @@ Prefab:
       propertyPath: m_RenderMode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 224528678238811568, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224528678238811568, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224528678238811568, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 62.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224528678238811568, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224891281057023510, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224891281057023510, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224891281057023510, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 387.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224891281057023510, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114342250588386764, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114342250588386764, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114342250588386764, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114342250588386764, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.4632353
+      objectReference: {fileID: 0}
+    - target: {fileID: 114342250588386764, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.5342292
+      objectReference: {fileID: 0}
+    - target: {fileID: 114342250588386764, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.875
+      objectReference: {fileID: 0}
+    - target: {fileID: 114342250588386764, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 0.32115054
+      objectReference: {fileID: 0}
+    - target: {fileID: 114342250588386764, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 0.37954158
+      objectReference: {fileID: 0}
+    - target: {fileID: 114342250588386764, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 0.66176474
+      objectReference: {fileID: 0}
+    - target: {fileID: 114847700880327056, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.4627451
+      objectReference: {fileID: 0}
+    - target: {fileID: 114847700880327056, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.53333336
+      objectReference: {fileID: 0}
+    - target: {fileID: 114847700880327056, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.8745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 114847700880327056, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 0.32156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 114847700880327056, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 0.38039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 114847700880327056, guid: 16cc206e2857044ada50e78833e51e6b,
+        type: 2}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 0.6627451
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 16cc206e2857044ada50e78833e51e6b, type: 2}
   m_IsPrefabParent: 0
@@ -7431,6 +7558,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!114 &1815765329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7594,6 +7722,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!114 &1822372312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7908,6 +8037,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!114 &1908530089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8176,10 +8306,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b8e4bb8f3858427eb60bb04c0ee5704, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: 
-  levelTrack: 0
-  isScoreable: 0
   initialBestScore: 2147483647
+  buildIndexOffset: 3
 --- !u!4 &1997191578 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4219831457173660, guid: eecbb4b779549422fbf0e2c87122b67c,
@@ -8704,6 +8832,7 @@ MonoBehaviour:
   paintSurfaceMaterial: {fileID: 2100000, guid: dcaeb4811fced46fdaea5407e65a5805,
     type: 2}
   lerpDuration: 10
+  debugOn: 0
 --- !u!114 &2105709496
 MonoBehaviour:
   m_ObjectHideFlags: 0

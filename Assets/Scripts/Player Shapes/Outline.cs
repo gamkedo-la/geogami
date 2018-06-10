@@ -18,6 +18,7 @@ public class Outline : MonoBehaviour {
     bool active;
 
     private bool objectReady;
+    bool introDone = true;
     public GameObject verticesGO;
     Vertices verticesScript;
 
@@ -43,12 +44,23 @@ public class Outline : MonoBehaviour {
         // Establish connection to verts it will follow
         linkOutlineVerts();
 
-        // Set everything to default
-        deselect();
+
 
 	    objectReady = true;
 
+        // Set everything to default
+        deselect();
+
+        StartCoroutine(waitForIntro());
+
 	}
+
+    IEnumerator waitForIntro()
+    {
+        introDone = false;
+        yield return new WaitForSeconds(3); // TODO get rid of magic number
+        introDone = true;
+    }
 
     public List<Transform> getOutlineVerts()
     {
@@ -128,7 +140,7 @@ public class Outline : MonoBehaviour {
 
     public void setLineAndSphere(float newLineThickness, float newSphereSize)
     {
-        if (!objectReady)
+        if (!objectReady || !introDone)
         {
             return;
         }

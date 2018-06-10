@@ -8,6 +8,11 @@ public class ResetGame : MonoBehaviour {
 	public void resetGame () {
         PlayerPrefs.DeleteAll();
 	}
+
+    public void revealAllLevels()
+    {
+        PlayerPrefs.SetInt("levelReached", 20000);
+    }
 	
 	
 }

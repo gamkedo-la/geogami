@@ -23,7 +23,7 @@ public class MainMenuBackButton : MonoBehaviour {
     public void backButtonClicked()
     {
 
-        Debug.Log("backButtonClicked");
+
 
         SceneManager.LoadScene("Menu - Main");
 

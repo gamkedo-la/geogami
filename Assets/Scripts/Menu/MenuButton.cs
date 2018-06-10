@@ -38,15 +38,15 @@ public class MenuButton : MonoBehaviour
     public void myOnMouseEnter()
     {
         setScaleXY(hoverScale);
-        if(debugOn)
-        Debug.Log("myOnMouseEnter");
+
+       
     }
 
     public void myOnMouseExit()
     {
         setScaleXY(baseScale);
-        if(debugOn)
-        Debug.Log("myOnMouseExit");
+       
+
     }
 
     public void myOnMouseClick()
