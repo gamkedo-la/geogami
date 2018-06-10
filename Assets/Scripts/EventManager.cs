@@ -135,7 +135,12 @@ public class EventManager : MonoBehaviour
         }
 
         // Record level reached
-        PlayerPrefs.SetInt("levelReached", SceneManager.GetActiveScene().buildIndex + 1 - levelStartIndex);
+        int newLevelReached = SceneManager.GetActiveScene().buildIndex + 1 - levelStartIndex;
+        int oldLevelReached = PlayerPrefs.GetInt("levelReached", 1);
+        if(newLevelReached > oldLevelReached)
+        {
+            PlayerPrefs.SetInt("levelReached", newLevelReached);
+        }
 
         StartCoroutine("displayLevelScore");
         StartCoroutine("endLevelComplete");

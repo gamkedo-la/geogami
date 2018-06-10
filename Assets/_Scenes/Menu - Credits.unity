@@ -113,6 +113,107 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &50425406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 50425407}
+  - component: {fileID: 50425409}
+  - component: {fileID: 50425408}
+  m_Layer: 5
+  m_Name: Names
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &50425407
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 50425406}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 446497758}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: -25, y: 0}
+  m_SizeDelta: {x: 150, y: 400}
+  m_Pivot: {x: 0.9999999, y: 1}
+--- !u!114 &50425408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 50425406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9705882, g: 0.9705882, b: 0.9705882, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 2
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Erik Verlage
+
+    Vignesh
+
+    Klaim
+
+    Phil Nicholson
+
+    Christer
+
+
+    Jaime Rivas
+
+    Misha
+
+    Luth
+
+    Asix Jin
+
+    Chris Deleon
+
+    Ashlee Muscroft
+
+
+
+    Playtesters
+
+'
+--- !u!222 &50425409
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 50425406}
 --- !u!1 &257293550
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,14 +336,15 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 50425407}
   m_Father: {fileID: 257293554}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -25}
-  m_SizeDelta: {x: 600, y: 400}
+  m_AnchoredPosition: {x: 92, y: -68}
+  m_SizeDelta: {x: 579.3, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &446497759
 MonoBehaviour:
@@ -276,24 +378,34 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Erik Verlage - Team lead, programming (main code)
+  m_Text: 'Team lead, programming (main code)
 
-    Vignesh - Music, programming (editor popup), levels XY
+    Music: "Ambient Geo", programming (editor warning dialog), level design: "Bunker",
+    "Crab"
 
-    Klaim - Music
+    Music: "Beautiful Sunday Inside"
 
-    Phil Nicholson - LevelsXY
+    Level design: "Merit Badge", "The Wanderer", "Waterfalls"
 
-    Christer - Menu effects, LevelsXY
+    Menu visual effects, level design: "Big G", "Bonbon", "House", "Smile", "Tilt",
+    "Tinker Toy", "Wildflowers"
 
-    Misha - Sound effects
+    Sound effects, level design: "Bursting Candy", "Caverns", "Cubs", "Wobble"
 
-    Ashlee Muscroft - level selector implementation and programming (bug fix on shape
-    selector, level info), UI animation level name, level track, level instructions
-    and score count transitions
+    Sound effects
+
+    Programming (score tracker, fonts), level design: "Vertebrae"
+
+    Music: "Sweet Geo"
+
+    UI buttons, level design: "Sea Dragon"
+
+    Level selector implementation and programming (bug fix on shape selector, level
+    info), UI animation level name, level track, level instructions and score count
+    transitions
 
 
-    Playtesting: Christer, Mary Brady, Andy King,Trenton Pegeas
+    Christer, Mary Brady, Andy King, Trenton Pegeas
 
 '
 --- !u!222 &446497760
@@ -731,7 +843,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 190}
+  m_AnchoredPosition: {x: 0, y: 156}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2103627103
