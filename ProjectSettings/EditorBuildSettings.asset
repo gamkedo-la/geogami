@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/_Levels/ErikV/Adding Friends.unity
     guid: 854a907f193cb4bc8bf2df210e541d32
   - enabled: 1
-    path: Assets/_Levels/ErikV/Pass Along.unity
+    path: Assets/_Levels/ErikV/Move Along.unity
     guid: 0b4369b5d53684edb871f3ef47c945fc
   - enabled: 1
     path: Assets/_Levels/ErikV/Half Diamond In The Sky.unity
@@ -72,8 +72,8 @@ EditorBuildSettings:
     path: Assets/_Levels/ErikV/Mushroom.unity
     guid: a7aeb04b1378a4d6d8438dc0d5f16683
   - enabled: 1
-    path: Assets/_Levels/ErikV/Twins.unity
-    guid: 7bad9d117ec734b899a62b3dd51d7843
+    path: Assets/_Levels/ErikV/Crown Jewel.unity
+    guid: 11a89161795ea49eb879e7afa0b207e9
   - enabled: 1
     path: Assets/_Levels/ErikV/Wonky Hex.unity
     guid: 508abd7044f8e4d53a4becaf1a396ad7
@@ -96,7 +96,7 @@ EditorBuildSettings:
     path: Assets/_Levels/ErikV/Wide Boat.unity
     guid: 94a3db61a7617488ebe3a5d09a435d71
   - enabled: 1
-    path: Assets/_Levels/ErikV/Rabbit.unity
+    path: Assets/_Levels/ErikV/Rabbit Ear.unity
     guid: 7103c37147e57493296452d75095df2c
   - enabled: 1
     path: Assets/_Levels/ErikV/I Heart Shapes.unity
