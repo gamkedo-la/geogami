@@ -22,7 +22,7 @@ public class EventManager : MonoBehaviour
 
     public GameObject sfxControllerGO;
     sfxController sfxControllerScript;
-    [SerializeField] private float revealSpeed = 20f;
+    [SerializeField] private float revealSpeed = 60f;
     [SerializeField] private GameObject endScreen;
 
     void Start()
@@ -39,7 +39,7 @@ public class EventManager : MonoBehaviour
 
 	    if (endScreen == null)
 	    {
-	        findEndScree();
+	        findEndScreen();
 	    }
 	} 
 
@@ -145,7 +145,7 @@ public class EventManager : MonoBehaviour
         StartCoroutine("endLevelComplete");
     }
 
-    private void findEndScree()
+    private void findEndScreen()
     {
         //using resourcse find all incase it isn'e enabled.
         var gos = Resources.FindObjectsOfTypeAll<GameObject>();
@@ -169,7 +169,7 @@ public class EventManager : MonoBehaviour
         //lerp reveal the canvasGroup;
         while (canvasGroup.alpha < 1)
         {
-            canvasGroup.alpha = Mathf.Lerp(0, 1, revealSpeed * Time.deltaTime);
+            canvasGroup.alpha = Mathf.Lerp(0, 1, revealSpeed * 0.3333f);
             yield return null;    
         }
         
