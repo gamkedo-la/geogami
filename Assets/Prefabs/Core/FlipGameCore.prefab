@@ -1372,7 +1372,7 @@ MonoBehaviour:
   gameStatus: 
   shapeTracker: {fileID: 1601989611860126}
   sfxControllerGO: {fileID: 0}
-  revealSpeed: 20
+  revealSpeed: 60
   endScreen: {fileID: 0}
 --- !u!114 &114769137068195310
 MonoBehaviour:
