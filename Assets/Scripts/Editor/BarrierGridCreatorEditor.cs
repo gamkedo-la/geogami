@@ -1,61 +1,61 @@
-﻿//using UnityEngine;
+﻿using UnityEngine;
 
-//using UnityEditor;
+using UnityEditor;
 
-//[CustomEditor(typeof(BarrierGridCreator))]
-//public class BarrierGridCreatorEditor : Editor
-//{
+[CustomEditor(typeof(BarrierGridCreator))]
+public class BarrierGridCreatorEditor : Editor
+{
 
-//    BarrierGridCreator scriptBarrierGridCreator;
+    BarrierGridCreator scriptBarrierGridCreator;
 
-//    private void OnEnable()
-//    {
-//        scriptBarrierGridCreator = (BarrierGridCreator)target;
-//        //scriptBarrierGridCreator.initializeVariables();
+    private void OnEnable()
+    {
+        scriptBarrierGridCreator = (BarrierGridCreator)target;
+        //scriptBarrierGridCreator.initializeVariables();
 
-//        scriptBarrierGridCreator.initialize();
+        scriptBarrierGridCreator.initialize();
 
-//    }
-
-
-
-//    public override void OnInspectorGUI()
-//    {
-//        base.OnInspectorGUI();
-
-//        EditorGUILayout.Space();
-//        EditorGUILayout.Space();
-//        EditorGUILayout.Space();
-
-//        if (GUILayout.Button("Update Grid Size"))
-//        {
-//            scriptBarrierGridCreator.updateGridSize();
-//            SceneView.RepaintAll();
-
-//        }
-
-//        if (GUILayout.Button("Instantiate Barriers!"))
-//        {
-//            scriptBarrierGridCreator.instantiateBarrierGrid();
-//            SceneView.RepaintAll();
-//        }
+    }
 
 
-//        //clearAllBarriers
-//        EditorGUILayout.Space();
-//        EditorGUILayout.Space();
-//        EditorGUILayout.Space();
-//        EditorGUILayout.Space();
-//        EditorGUILayout.Space();
 
-//        if (GUILayout.Button("Clear All Barriers"))
-//        {
-//            scriptBarrierGridCreator.clearAllBarriers();
-//        }
-//        EditorGUILayout.Space();
-//        EditorGUILayout.Space();
-//        EditorGUILayout.Space();
-//    }
-//}
+    public override void OnInspectorGUI()
+    {
+        base.OnInspectorGUI();
+
+        EditorGUILayout.Space();
+        EditorGUILayout.Space();
+        EditorGUILayout.Space();
+
+        if (GUILayout.Button("Update Grid Size"))
+        {
+            scriptBarrierGridCreator.updateGridSize();
+            SceneView.RepaintAll();
+
+        }
+
+        if (GUILayout.Button("Instantiate Barriers!"))
+        {
+            scriptBarrierGridCreator.instantiateBarrierGrid();
+            SceneView.RepaintAll();
+        }
+
+
+        //clearAllBarriers
+        EditorGUILayout.Space();
+        EditorGUILayout.Space();
+        EditorGUILayout.Space();
+        EditorGUILayout.Space();
+        EditorGUILayout.Space();
+
+        if (GUILayout.Button("Clear All Barriers"))
+        {
+            scriptBarrierGridCreator.clearAllBarriers();
+        }
+        EditorGUILayout.Space();
+        EditorGUILayout.Space();
+        EditorGUILayout.Space();
+    }
+}
 
 

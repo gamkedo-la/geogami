@@ -1,111 +1,111 @@
-﻿//using UnityEngine;
+﻿using UnityEngine;
 
-//using UnityEditor;
+using UnityEditor;
 
-//[CustomEditor(typeof(FlippingTool))]
-//public class FlippingToolEditor : Editor
-//{
+[CustomEditor(typeof(FlippingTool))]
+public class FlippingToolEditor : Editor
+{
 
-//    private bool inFlipMode = false;
-//    private bool oldinFlipMode = false;
-//    private bool needsRepaint;
-//    public float gamePlaneZ = 0;
+    private bool inFlipMode = false;
+    private bool oldinFlipMode = false;
+    private bool needsRepaint;
+    public float gamePlaneZ = 0;
 
-//    int selectedChildIndex = 0; // Selected from dropdown menu
+    int selectedChildIndex = 0; // Selected from dropdown menu
 
-//    FlippingTool scriptFlippingTool;
-//    GameObject goFlippingTool;
-//    GameObject goShapeContainer;
+    FlippingTool scriptFlippingTool;
+    GameObject goFlippingTool;
+    GameObject goShapeContainer;
 
-//    private void OnEnable()
-//    {
-//        scriptFlippingTool = (FlippingTool)target;
-//        scriptFlippingTool.selectFirstShapeInShapeContainer();
+    private void OnEnable()
+    {
+        scriptFlippingTool = (FlippingTool)target;
+        scriptFlippingTool.selectFirstShapeInShapeContainer();
 
-//        goFlippingTool = scriptFlippingTool.gameObject;
-//        goShapeContainer = scriptFlippingTool.shapesContainer;
-//    }
+        goFlippingTool = scriptFlippingTool.gameObject;
+        goShapeContainer = scriptFlippingTool.shapesContainer;
+    }
 
-//    void OnSceneGUI()
-//    {
-//        if (inFlipMode)
-//        {
-
-
-//            Event guiEvent = Event.current;
-
-//            Ray mouseRay = HandleUtility.GUIPointToWorldRay(guiEvent.mousePosition);
-//            float distToGamePlane = (gamePlaneZ - mouseRay.origin.z) / mouseRay.direction.z;
-//            Vector3 mousePosition = mouseRay.GetPoint(distToGamePlane);
+    void OnSceneGUI()
+    {
+        if (inFlipMode)
+        {
 
 
-//            if (guiEvent.type == EventType.MouseDown && guiEvent.button == 0)
-//            {
+            Event guiEvent = Event.current;
 
-//                needsRepaint = true;
-//                scriptFlippingTool.flipShapeInEditor(mousePosition);
-
-//            }
+            Ray mouseRay = HandleUtility.GUIPointToWorldRay(guiEvent.mousePosition);
+            float distToGamePlane = (gamePlaneZ - mouseRay.origin.z) / mouseRay.direction.z;
+            Vector3 mousePosition = mouseRay.GetPoint(distToGamePlane);
 
 
+            if (guiEvent.type == EventType.MouseDown && guiEvent.button == 0)
+            {
 
-//            // Do not deselect object if clicking in editor
-//            if (guiEvent.type == EventType.Layout)
-//            {
-//                HandleUtility.AddDefaultControl(GUIUtility.GetControlID(FocusType.Passive));
-//            }
+                needsRepaint = true;
+                scriptFlippingTool.flipShapeInEditor(mousePosition);
 
-//        }
+            }
 
 
 
-//        // Repaint editor
-//        if (needsRepaint)
-//        {
-//            // TODO repaint editor window, find current version
-//            needsRepaint = false;
-//        }
-//    }
+            // Do not deselect object if clicking in editor
+            if (guiEvent.type == EventType.Layout)
+            {
+                HandleUtility.AddDefaultControl(GUIUtility.GetControlID(FocusType.Passive));
+            }
 
-
-//    public override void OnInspectorGUI()
-//    {
-//        base.OnInspectorGUI();
-
-//        EditorGUILayout.Space();
-//        EditorGUILayout.Space();
-//        EditorGUILayout.Space();
-
-//        EditorGUILayout.LabelField("LEVEL FLIPPING TOOLS: ");
-//        inFlipMode = EditorGUILayout.Toggle("Activate Flip Mode", inFlipMode);
-
-//        if (inFlipMode && !oldinFlipMode) // Just activated toggle
-//        {
-
-//            // Instantiate all shapes to PaintCanvas
-//            scriptFlippingTool.paintAllShapesToPaintSurfaceEditor();
-
-//        }
-//        oldinFlipMode = inFlipMode;
-
-
-//        // Dropdown menu to select Player shape
-//        // Loop through children to get string names
-//        string[] optionsForDropDown = new string[goShapeContainer.transform.childCount];
-//        int index = 0;
-//        foreach (Transform child in goShapeContainer.transform)
-//        {
-//            optionsForDropDown[index] = child.gameObject.name;
-//            index++;
-//        }
-//        int childIndex = EditorGUILayout.Popup(selectedChildIndex, optionsForDropDown);
-//        if (childIndex != selectedChildIndex)
-//        {
-//            selectedChildIndex = childIndex;
-//            scriptFlippingTool.selectNewShape(goShapeContainer.transform.GetChild(selectedChildIndex).gameObject);
-//        }
+        }
 
 
 
-//    }
-//}
+        // Repaint editor
+        if (needsRepaint)
+        {
+            // TODO repaint editor window, find current version
+            needsRepaint = false;
+        }
+    }
+
+
+    public override void OnInspectorGUI()
+    {
+        base.OnInspectorGUI();
+
+        EditorGUILayout.Space();
+        EditorGUILayout.Space();
+        EditorGUILayout.Space();
+
+        EditorGUILayout.LabelField("LEVEL FLIPPING TOOLS: ");
+        inFlipMode = EditorGUILayout.Toggle("Activate Flip Mode", inFlipMode);
+
+        if (inFlipMode && !oldinFlipMode) // Just activated toggle
+        {
+
+            // Instantiate all shapes to PaintCanvas
+            scriptFlippingTool.paintAllShapesToPaintSurfaceEditor();
+
+        }
+        oldinFlipMode = inFlipMode;
+
+
+        // Dropdown menu to select Player shape
+        // Loop through children to get string names
+        string[] optionsForDropDown = new string[goShapeContainer.transform.childCount];
+        int index = 0;
+        foreach (Transform child in goShapeContainer.transform)
+        {
+            optionsForDropDown[index] = child.gameObject.name;
+            index++;
+        }
+        int childIndex = EditorGUILayout.Popup(selectedChildIndex, optionsForDropDown);
+        if (childIndex != selectedChildIndex)
+        {
+            selectedChildIndex = childIndex;
+            scriptFlippingTool.selectNewShape(goShapeContainer.transform.GetChild(selectedChildIndex).gameObject);
+        }
+
+
+
+    }
+}
